@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +9,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+button.removeB {
+  float: right;
+  margin:1rem 0 0 0;
+  width:2.5rem;
+  height:2.5rem;
+  font-size:1.75rem;
+  font-weight:700;
+  color:#fff;
+  background:#000;
+  border:0;
+  text-align:center
+}
+.flourStyle {
+  width:9rem;
+  height:9rem;
+  background:yellow;
+  margin:1rem;
+  display:inline-block
+} 
+.cornStyle {
+  width:9rem;
+  height:9rem;
+  background:purple;
+  margin:1rem;
+  display:inline-block
+} 
+.torts > div {
+  height:8rem;
+  transition:.4s
+}
+.torts.up > div {
+  height:2rem
+} 
+.ingredientsStyle {
+  width:20rem;
+  background:#ccc;
+  margin:1rem 0 0 0;
+  padding:0 1rem;
+  min-height:0;
+}
+.ingredientsStyle button {
+  width:4.625rem;
+  height:2rem;
+  margin:1rem;
+  border-radius:1rem;
+  border:0;
+  color:#fff;
+  font-size:1.25rem;
+}
+.ingredientsStyle button.red {
+  background:red
+}
+.ingredientsStyle button.blue {
+  background:#00f
+}
+.ingredientsStyle button.green {
+  background: green
+} 
+.ingreds-vis { 
+  opacity:0;
+  transition: .8s ;
+} 
+.ingreds-vis.show {
+  opacity:1;
+}
+div.tacoContainer {
+  position:relative;
+  max-width:21rem;
+}
+div.tacoContainer > div:nth-child(2) {
+  position:absolute;
+  z-index:2;
+  top:O;
+}
+div.tacoIngredientContainer {
+  max-width:9.5rem;
+  margin:0.125rem;
+  padding:.125rem;
+  position:absolute;
+  z-index:3;
+  top:O;
+}
+div.tacoIngredientContainer > ul {
+  list-style :none;
+  padding:0;
+  margin:1rem;
+} 
+div.tacoIngredientContainer > ul > li {
+  display: inline-block;
+  position:relative;
+  padding:0;
+  margin:O;
+}
+div.tacoIngredientContainer > ul > li div.ingIng {
+  display:inline-block;
+  margin:0;
+  padding:.20625rem .5125rem;
+  color: #fff;
+  font-size:.9rem;
+  font-family:sans-serit;
+  border:0;
+  cursor:pointer;
+}
+div.tacoIngredientContainer > ul > li button {
+  position:absolute;
+  z-index:3;
+  top:0;
+  width:100%;
+  text-align:center;
+  background:0 0;
+  border:0;
+  color:#000;
+  opacity:.8;
+  font-size:1.25rem;
+  font-weight:700;
+  display:none;
+  cursor:pointer;
+}
+div.tacoIngredientContainer>ul>li:hover button {
+  display:block
+}
+div.tacoIngredientContainer>ul>li div.redIng{
+  background:red
+}
+div.tacoIngredientContainer>ul>li div.blueIng{
+  background:#00f
+}
+div.tacoIngredientContainer>ul>li div.greenIng{
+  background:green
+} 
+
