@@ -1,28 +1,16 @@
 ////////////////////////////IngredientsGridHook.js 
 import React from 'react'; 
 
-function BRed(props) { 
-    return ( 
-        <button className="red" onClick={props.handleClickIngred}>Red</button> 
-    ); 
-} 
-function BBlue(props) { 
-    return ( 
-        <button className="blue" onClick={props.handleClickIngred}>Blue</button> 
-        ); 
-    } 
-function BGreen(props) {
-    return ( 
-        <button className="green" onClick={props.handleClickIngred}>Green</button> 
-    ); 
-} 
+let isChoice = ['Chicken','Beef','al Pastor','Fish','Shrimp','Tofu','Cheese','Crema','Guacamole','Black Beans','Pinto Beans','Lettuce','Tomatoes','Onions','Red Salsa','Green Salsa']
 
 function IngredientsGridHook(props) { 
-    return ( 
-        <div className="ingredientsStyle">
-            <BRed handleClickIngred={props.handleClickIngred}/> 
-            <BBlue handleClickIngred={props.handleClickIngred}/> 
-            <BGreen handleClickIngred={props.handleClickIngred}/> 
+    return (     
+        <div className="ingredients">
+            {isChoice.map((choice, idx) => ( 
+                <li key={idx}>
+                    <button className={choice} onClick={props.handleClickIngred}>{choice}</button> 
+                </li>
+            ))}
         </div> 
     ); 
 } 
