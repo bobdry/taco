@@ -2,8 +2,10 @@
 import React, { useState } from 'react'; 
 import FlourHook from "./components/FlourHook"; 
 import CornHook from "./components/CornHook"; 
+import IngHook from "./components/IngHook"; 
 import IngredientsGridHook from './components/IngredientsGridHook'; 
-import SubmitBoxes from './components/SubmitBoxes'; 
+import SubmitBoxes from './components/SubmitBoxes';
+import ResetOrder from './components/ResetOrder';  
 
 function TacoHook() { 
     const [tacoChildren, setTacoChildren] = useState([]); 
@@ -27,22 +29,6 @@ function TacoHook() {
         setIsHidden(true); 
     } 
 
-    //ingredient components 
-    function TastyRed() { 
-        return ( 
-        <div className="ingIng redIng">RED</div> 
-        ); 
-    } 
-    function TastyBlue() { 
-        return ( 
-        <div className="ingIng blueIng">BLUE</div> 
-        ); 
-    } 
-    function TastyGreen() { 
-        return ( <div className="ingIng greenIng">GREEN</div> 
-        ); 
-    } 
-
     function handleClickRemoveIngred (idx) {
         // assigning the list to temp variable 
         const temp = [...tacoIngredientStack]; 
@@ -54,16 +40,9 @@ function TacoHook() {
 
     function handleClickIngred (e) {
         let idx = tacoIngredientStack.length; 
+        let handleIngChoice = e.target.className;
         if (idx < 12) { 
-            if (e.target.className === 'Chicken') { 
-                setTacoIngredientStack([...tacoIngredientStack, <TastyRed key={idx}/>]); 
-            } 
-            if (e.target.className === 'Beef') { 
-                setTacoIngredientStack([...tacoIngredientStack, <TastyBlue key={idx}/>]); 
-            } 
-            if (e.target.className === 'al Pastor') { 
-                setTacoIngredientStack([...tacoIngredientStack, <TastyGreen key= { idx}/>]); 
-            } 
+            setTacoIngredientStack([...tacoIngredientStack, <IngHook handleIngChoice={handleIngChoice} key= {idx}/>]);  
         } 
         else { 
             alert('The BOX is FULL!'); 
@@ -83,6 +62,13 @@ function TacoHook() {
         else {
             alert('add pills');
         }
+    }
+
+    function handleResetOrder() {
+        setTacoChildren([]); 
+        setTacoIngredientStack([]); 
+        setIsHidden(true);
+        setIsComplete(true); 
     }
 
     return ( 
@@ -124,6 +110,7 @@ function TacoHook() {
                 </div> 
                 {tacoChildren} 
                 <p>Thank you!</p>
+                <ResetOrder handleResetOrder={handleResetOrder}/>
             </div> 
         </div> 
     ); 

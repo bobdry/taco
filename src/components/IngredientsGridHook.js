@@ -1,7 +1,7 @@
 ////////////////////////////IngredientsGridHook.js 
 import React from 'react'; 
 
-let isChoice = ['Chicken','Beef','al Pastor','Fish','Shrimp','Tofu','Cheese','Crema','Guacamole','Black Beans','Pinto Beans','Lettuce','Tomatoes','Onions','Red Salsa','Green Salsa']
+let isChoice = ['Chicken','Beef','al Pastor','Fish','Shrimp','Tofu','Black Beans','Pinto Beans','Lettuce','Tomatoes','Onions','Cheese','Crema','Guacamole','Red Salsa','Green Salsa']
 
 function IngredientsGridHook(props) { 
     return (     
