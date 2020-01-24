@@ -74,12 +74,12 @@ function TacoHook() {
     return ( 
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
-            <h1 className="screen-one">Taco Time</h1>
-            <p className="screen-one">Pick you torrilla!</p> 
+            <h1>Taco Time</h1>
+            <p>Pick your torrilla!</p> 
             <FlourHook handleClickFlour={handleClickFlour}/> 
             <CornHook handleClickCorn={handleClickCorn}/> 
-            <p className="screen-one">Welcome</p>
-            <p className="screen-one">This is a Taco app using React Hooks for fun :)</p>
+            <p><strong>Welcome</strong></p>
+            <p>This is a Taco app using React Hooks for fun :)</p>
         </div> 
         <div className="tacoContainer"> 
             {!isHidden && <button className="removeB" onClick={handleClickRemove}>X</button>} 
