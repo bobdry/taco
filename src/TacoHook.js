@@ -113,7 +113,7 @@ function TacoHook() {
                 <ResetOrder handleResetOrder={handleResetOrder}/>
             </div> 
 
-            <div class="monkik-icons">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div className="monkik-icons">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   
         </div> 
     ); 
