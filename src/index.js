@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import TacoHook from "./TacoHook";
+//import Drag from "./Drag";
 
 const rootElement = document.getElementById("root"); 
 ReactDOM.render( <TacoHook />, rootElement);
+// ReactDOM.render( <Drag />, rootElement);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -41,11 +41,11 @@ function TacoHook() {
     function handleClickIngred (e) {
         let idx = tacoIngredientStack.length; 
         let handleIngChoice = e.target.className;
-        if (idx < 12) { 
+        if (idx < 9) { 
             setTacoIngredientStack([...tacoIngredientStack, <IngHook handleIngChoice={handleIngChoice} key= {idx}/>]);  
         } 
         else { 
-            alert('The BOX is FULL!'); 
+            alert('Your Taco is FULL!'); 
         } 
     } 
 
@@ -60,7 +60,7 @@ function TacoHook() {
             setIsComplete(false);
         }
         else {
-            alert('add pills');
+            alert('Add some tasty ingredients.');
         }
     }
 
@@ -79,7 +79,7 @@ function TacoHook() {
             <FlourHook handleClickFlour={handleClickFlour}/> 
             <CornHook handleClickCorn={handleClickCorn}/> 
             <p><strong>Welcome</strong></p>
-            <p>This is a Taco app using React Hooks for fun :)</p>
+            <p>A Taco app using React Hooks for fun :)</p>
         </div> 
         <div className="tacoContainer"> 
             {!isHidden && <button className="removeB" onClick={handleClickRemove}>X</button>} 
@@ -109,9 +109,12 @@ function TacoHook() {
                 </ul>
                 </div> 
                 {tacoChildren} 
-                <p>Thank you!</p>
+                <h3><em>What a delicious taco!</em></h3>
                 <ResetOrder handleResetOrder={handleResetOrder}/>
             </div> 
+
+            <div class="monkik-icons">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  
         </div> 
     ); 
 } 

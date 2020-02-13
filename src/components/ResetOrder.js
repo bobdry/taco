@@ -5,7 +5,7 @@ function ResetOrder(props) {
     return (
         <div>
             <p className="submitter">
-                <button onClick={props.handleResetOrder}>New Order</button>
+                <button onClick={props.handleResetOrder}><strong>NEW ORDER</strong></button>
             </p>
         </div>
     );

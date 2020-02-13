@@ -3,7 +3,12 @@ body {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: red;
+  background: #fff6e6;
+  color: #594429;
+}
+
+a, button {
+    outline: 0;
 }
 
 code {
@@ -19,8 +24,9 @@ div#root {
 }
 
 div#root > div {
-  min-height: 40.0rem;
-  background: green;
+  height: 40.0rem;
+  background: #fff9f5;
+  border: 0.125rem #e8ded1 solid; 
   margin: 0.5rem;
   padding: 0.25rem;
   border-radius: 1.0rem;
@@ -30,46 +36,71 @@ div#root > div {
 
 button.removeB {
   position: absolute;
-  right: 0;
+  right: 0.5rem;
   margin:0;
   width:2.5rem;
   height:2.5rem;
   font-size:1.75rem;
   font-weight:700;
-  color:#fff;
-  background:#000;
+  color: #fff9f5;
+  background: #ab674f;
   border:0;
-  text-align:center
+  border-radius: 0.25rem;
+  text-align:center;
+  cursor:pointer;
 }
+button.removeB:hover {
+  background: #855841;
+}
+
+
 .flourStyle {
-  width:9rem;
-  height:9rem;
-  background:yellow;
-  margin:0 1rem;
-  display:inline-block
+  width:10rem;
+  height:10rem;
+  background: #e3c084;
+  margin:0 0.25rem;
+  display:inline-block;
+  cursor:pointer;
 } 
 .cornStyle {
-  width:9rem;
-  height:9rem;
-  background:purple;
-  margin:0 1rem;
-  display:inline-block
+  width:10rem;
+  height:10rem;
+  background: #f0e162;
+  margin:0 0.25rem;
+  display:inline-block;
+  cursor:pointer;
 } 
 .torts > div {
-  height:8rem;
+  height:10rem;    
+  border-radius: 5rem;
   transition:.4s
 }
 .torts.up > div {
-  height:2rem
+  height:2rem;
+  border-radius: 1rem;
 } 
+.torts.up > div p {
+  margin: 0.5rem;
+}
 .torts > h1, .torts > p {
   opacity: 1.0;
   transition:.4s;
   min-height: 0.625rem;
 }
+.torts > h1{
+  color: #ab674f;
+  font-size: 2.4rem;
+  margin: 1.5rem 0 0;
+}
+
+.torts > p  {
+  font-size: 1.125rem;
+}
+
 .torts.up > h1, .torts.up > p {
   font-size: 10%;
   opacity: 0;
+  margin: 0;
 }
 .ingredientsStyle {
   width:20rem;
@@ -86,6 +117,7 @@ button.removeB {
   border:0;
   color:#fff;
   font-size:1.25rem;
+  cursor:pointer;
 }
 .ingredientsStyle button.red {
   background:red
@@ -96,9 +128,14 @@ button.removeB {
 .ingredientsStyle button.green {
   background: green
 } 
+.ingredients{
+  border: 0.03125rem #e8ded1 solid;
+  margin: 1.0rem 0 0;
+  padding: 0 0 0.0625rem 0.0625rem;
+}
 .ingredients > ul {
   padding: 0;
-  margin: 1.0rem 0 0 0;
+  margin: 0;
   list-style: none;
 }
 .ingredients > ul > li{
@@ -106,14 +143,32 @@ button.removeB {
 }
 .ingredients > ul > li > button{
   width: 25%;
-  height: 4.0rem;
+  padding: 2.0rem 0 0.25rem 0;
+  cursor: pointer;
+  border: 0.03125rem #e8ded1 solid;
+  background-size: 2.0rem 1.50rem;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0.375rem;
 }
+.ingredients > ul > li > button:hover{
+  background-color: #ADECF0;
+}
+
+.ingredients > ul > li > button.Chicken{
+  background-image: url(/icons/chicken.svg);
+  fill: #000;
+}
+
 .ingreds-vis { 
   opacity:0;
-  transition: .8s ;
+  transition: .4s;
+  height: 1.0rem;
+  overflow: hidden;
 } 
 .ingreds-vis.show {
   opacity:1;
+  height: 18rem;
 }
 div.tacoContainer {
   position:relative;
@@ -121,6 +176,13 @@ div.tacoContainer {
 div.tacoContainer div.flourStyle > p, div.tacoContainer div.cornStyle > p, div.order-complete div.flourStyle > p, div.order-complete div.cornStyle > p {
   display: none;
 }
+div.order-complete.done > div:nth-child(2), div.tacoContainer div:last-child {
+  width:16.0rem;
+  height: 16.0rem;
+  border-radius: 8.0rem;
+  cursor: default;
+}
+
 div.tacoIngredientContainer {
   position:absolute;
   z-index:2;
@@ -131,18 +193,32 @@ div.tacoIngredientContainer {
   margin:0.125rem;
   padding:.125rem;
   position:absolute;
-  top:O;
 }
 div.tacoIngredientContainer > ul {
-  list-style :none;
-  padding:0;
-  margin:1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
 } 
 div.tacoIngredientContainer > ul > li {
-  display: inline-block;
-  position:relative;
-  padding:0;
-  margin:O;
+  position: relative;
+  padding: 0.25rem 0.125rem 0.125rem 1.0rem;
+  width: 7.5rem;
+  border-bottom: 0.0625rem #ab674f dashed;
+  text-align: left;
+}
+div.tacoIngredientContainer > ul > li > div:before {
+  content: "";
+  float: left;
+  width: 1.4rem;
+  height: 1.5rem;
+  background: green;
+  margin: -0.25rem 0.5rem 0 0;
+}
+div.tacoIngredientContainer > ul > li > div.Onions:before {
+  background: yellow;
+}
+div.tacoIngredientContainer > ul > li:last-child {
+  border-bottom: 0;
 }
 div.tacoIngredientContainer > ul > li div.ingIng {
   display:inline-block;
@@ -155,19 +231,20 @@ div.tacoIngredientContainer > ul > li div.ingIng {
   cursor:pointer;
 }
 div.tacoIngredientContainer > ul > li button {
-  position:absolute;
-  z-index:3;
-  top:0;
-  width:100%;
-  text-align:center;
-  background:0 0;
-  border:0;
-  color:#000;
-  opacity:.8;
-  font-size:1.25rem;
-  font-weight:700;
-  display:none;
-  cursor:pointer;
+  position: absolute;
+  z-index: 3;
+  top: -0.625rem;
+  width: 100%;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  margin-left: -1.0rem;
+  color: red;
+  opacity: .8;
+  font-size: 2.125rem;
+  font-weight: 700;
+  display: none;
+  cursor: pointer;
 }
 div.tacoIngredientContainer>ul>li:hover button {
   display:block
@@ -187,14 +264,107 @@ div.order-complete {
   position: absolute;
   z-index: 2;
   width: 100%;
-  height: 95%;
+  height: 88.25%;
   background: #fff;
   top: 0;
   left: 0;
   border-radius: 1.0rem;
-  padding: 1.0rem 0;
+  padding: 4.75rem 0 0;
+  opacity: 0;
+  transition: .4s;
 }
 
 div.order-complete.done {
   display: block;
+  opacity: 1;
+}
+
+p.submitter button {
+  color: #fff9f5;
+  background: #ab674f;
+  font-size: 1.5rem;
+  border: 0;
+  padding: .125rem 1.0rem;
+  border-radius: 0.25rem;
+  cursor:pointer;
+}
+p.submitter button:hover {
+  background: #855841;
+}
+
+div.monkik-icons {
+  text-align: center;
+  font-size: 80%;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 3.25rem;
+}
+
+
+/* new drag and drop */
+
+.AppDrag {
+  text-align: center;
+  width: 95%;
+  margin: 15px auto;
+}
+
+.container-drag {
+  text-align: center;
+}
+
+.one {
+  position: relative;
+  width: 100%;
+  height: 10.0rem;
+  background-color: #EEEEEE;
+  border-right: 1px dotted;
+}
+
+.two {
+  position: relative;
+  width: 100%;
+  height: 10.0rem;
+  background-color: #333;
+  border-right: 1px dotted;
+}
+
+.three {
+  position: relative;
+  width: 100%;
+  height: 10.0rem;
+  background-color: #999;
+  border-right: 1px dotted;
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #E0E0E0;
+  width:100%;
+}
+
+.task-header {
+  display: inline-block;
+  background-color: skyblue;
+  width:100%;
+}
+
+.droppable {
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  right: 0;
+  top: 10;
+  background-color: #9E9E9E;
+  border-left: 1px dotted;
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 5px auto;
+  line-height: 5em;
 }
