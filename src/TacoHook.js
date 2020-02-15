@@ -75,7 +75,7 @@ function TacoHook() {
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
             <h1>Taco Time</h1>
-            <p>Pick your torrilla!</p> 
+            <p>Pick your tortilla!</p> 
             <FlourHook handleClickFlour={handleClickFlour}/> 
             <CornHook handleClickCorn={handleClickCorn}/> 
             <p><strong>Welcome</strong></p>
