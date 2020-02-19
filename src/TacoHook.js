@@ -86,8 +86,8 @@ function TacoHook() {
             <div className="tacoIngredientContainer"> 
             <ul>
             {tacoIngredientStack.map((item, idx) => ( 
-                <li key={idx}>
-                    {item} <button onClick={() => handleClickRemoveIngred(idx)}>X</button>
+                <li key={idx} onClick={() => handleClickRemoveIngred(idx)}>
+                    {item} <button>X</button>
                 </li>
             ))}
             </ul>
