@@ -36,7 +36,7 @@ div#root > div {
 
 button.removeB {
   position: absolute;
-  z-index: 100;
+  z-index: 3;
   right: 0.5rem;
   margin:0;
   padding: 0 0.5rem;
@@ -275,7 +275,7 @@ div.tacoIngredientContainer>ul>li div.greenIng{
 div.order-complete {
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   height: 90%;
   background: radial-gradient(closest-side, #FEF3E5, #FFE4B8);
