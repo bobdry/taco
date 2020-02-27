@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/taco/static/css/main.453a0b24.chunk.css",
-    "main.js": "/taco/static/js/main.93b840c6.chunk.js",
-    "main.js.map": "/taco/static/js/main.93b840c6.chunk.js.map",
+    "main.css": "/taco/static/css/main.7eacfcb6.chunk.css",
+    "main.js": "/taco/static/js/main.c2e337f2.chunk.js",
+    "main.js.map": "/taco/static/js/main.c2e337f2.chunk.js.map",
     "runtime-main.js": "/taco/static/js/runtime-main.6aaeb38a.js",
     "runtime-main.js.map": "/taco/static/js/runtime-main.6aaeb38a.js.map",
     "static/js/2.50fdec36.chunk.js": "/taco/static/js/2.50fdec36.chunk.js",
     "static/js/2.50fdec36.chunk.js.map": "/taco/static/js/2.50fdec36.chunk.js.map",
     "index.html": "/taco/index.html",
-    "precache-manifest.ea83ed47d6f23d25c448808aa530dd24.js": "/taco/precache-manifest.ea83ed47d6f23d25c448808aa530dd24.js",
+    "precache-manifest.fa0305029d7af0992c5de80fd11b7a2d.js": "/taco/precache-manifest.fa0305029d7af0992c5de80fd11b7a2d.js",
     "service-worker.js": "/taco/service-worker.js",
-    "static/css/main.453a0b24.chunk.css.map": "/taco/static/css/main.453a0b24.chunk.css.map"
+    "static/css/main.7eacfcb6.chunk.css.map": "/taco/static/css/main.7eacfcb6.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.6aaeb38a.js",
     "static/js/2.50fdec36.chunk.js",
-    "static/css/main.453a0b24.chunk.css",
-    "static/js/main.93b840c6.chunk.js"
+    "static/css/main.7eacfcb6.chunk.css",
+    "static/js/main.c2e337f2.chunk.js"
   ]
 }
