@@ -87,7 +87,8 @@ button.removeB:hover {
 .torts.up > div {
   padding-top: 0;
   border-radius: 1.125rem;
-} 
+  margin-top: -1.5rem;
+}   
 .torts.up > div p {
   margin: 0.5rem;
 }
@@ -208,7 +209,7 @@ div.tacoIngredientContainer > ul > li {
   position: relative;
 }
 div.tacoIngredientContainer > ul > li > div {
-  padding: 0.1875rem 0 0.125rem 3.625rem;
+  padding: 0.21875rem 0 0.1875rem 3.625rem;
 }
 @media all and (min-width: 340px) {
   div.tacoIngredientContainer > ul > li > div {
@@ -219,10 +220,10 @@ div.tacoContainer > div.tacoIngredientContainer > ul > li > div {
   cursor: pointer;
 }
 div.tacoIngredientContainer > ul > li:first-child > div{
-  padding-bottom: 1.0625rem;
+  padding-bottom: 1.1875rem;
 }
 div.tacoIngredientContainer > ul > li:nth-child(9)> div {
-  padding-top: 1.125rem;
+  padding-top: 1.1875rem;
 }
 div.tacoContainer > div.tacoIngredientContainer > ul > li > div:hover {
   background-color: red !important;
@@ -286,7 +287,7 @@ div.order-complete {
   top: 0;
   left: 0;
   border-radius: 1.0rem;
-  padding: 5.0625rem 0 0;
+  padding: 4.375rem 0 0;
   opacity: 0;
   background: radial-gradient(closest-side, #FEF3E5, #FFE4B8);
   }
@@ -342,7 +343,7 @@ p.submitter{
 }
 
 div.order-complete.done h3 {
-  margin: 3.5rem 0 2.5rem 0;
+  margin: 1.0rem 0 5.0rem 0;
 }
  
 div.order-complete.dine p.submitter {

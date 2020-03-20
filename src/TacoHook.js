@@ -58,6 +58,7 @@ function TacoHook() {
             });
             //alert(submittedBox);
             setIsComplete(false);
+            window.scrollTo(0,0);
         }
         else {
             alert('Add some tasty ingredients.');
@@ -69,6 +70,7 @@ function TacoHook() {
         setTacoIngredientStack([]); 
         setIsHidden(true);
         setIsComplete(true); 
+        window.scrollTo(0,0);
     }
 
     return ( 
