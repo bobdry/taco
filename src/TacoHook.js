@@ -76,8 +76,8 @@ function TacoHook() {
     return ( 
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
-            <h1>Taco Time</h1>
-            <p>Pick your tortilla!</p> 
+            <h1>TacoStack.app</h1>
+            <p>A minimalist React web app for customizable item<sup>*</sup> ordering.</p> 
             <FlourHook handleClickFlour={handleClickFlour}/> 
             <CornHook handleClickCorn={handleClickCorn}/> 
             <p><strong>Welcome</strong></p>
