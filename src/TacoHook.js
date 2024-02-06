@@ -76,16 +76,14 @@ function TacoHook() {
     return ( 
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
-            <h1>TacoStack.app</h1>
-            <p>A minimalist React web app for customizable item<sup>*</sup> ordering.</p> 
+            <h1>Taco Stack</h1>
+            <p>A simple React app for taco customization.</p> 
             <FlourHook handleClickFlour={handleClickFlour}/> 
             <CornHook handleClickCorn={handleClickCorn}/> 
-            <p><strong>Welcome</strong></p>
-            <p>A Taco app using React Hooks for fun :)</p>
         </div> 
         <div className="tacoContainer"> 
-            {!isHidden && <button className="removeB" onClick={handleClickRemove}>X</button>} 
-            <div className="tacoIngredientContainer"> 
+            {!isHidden && <button className="removeB" onClick={handleClickRemove}></button>} 
+            <div className={`tacoIngredientContainer ${isHidden ? "hide" : "show"}`}> 
             <ul>
             {tacoIngredientStack.map((item, idx) => ( 
                 <li key={idx} onClick={() => handleClickRemoveIngred(idx)}>
@@ -101,7 +99,7 @@ function TacoHook() {
             {!isHidden && <SubmitBoxes handleSubmitBoxes={handleSubmitBoxes}/>} 
         </div>
             <div className={`order-complete ${isComplete ? "undone" : "done"}`}>
-                <div className="tacoIngredientContainer"> 
+                <div className={`tacoIngredientContainer ${isHidden ? "hide" : "show"}`}> 
                 <ul>
                 {tacoIngredientStack.map((item, idx) => ( 
                     <li key={idx}>
@@ -113,10 +111,16 @@ function TacoHook() {
                 {tacoChildren} 
                 <h3><em>What a delicious taco!</em></h3>
                 <ResetOrder handleResetOrder={handleResetOrder}/>
+                <div class="rims">
                 <div className="taco-rim"></div>
+                <div className="taco-rim-blue"></div>
+                </div>
             </div> 
 
-            <div className="monkik-icons">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div className="monkik-icons">
+                <p>tacostack.app = React + gh-pages</p>
+                <p>Icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
+            </div>
   
         </div> 
     ); 

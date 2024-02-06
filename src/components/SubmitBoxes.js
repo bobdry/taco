@@ -5,7 +5,7 @@ function SubmitBoxes(props) {
     return (
         <div>
             <p className="submitter">
-                <button onClick={props.handleSubmitBoxes}><strong>PLACE ORDER</strong></button>
+                <button onClick={props.handleSubmitBoxes}><strong>&bull; Order Taco &bull;</strong></button>
             </p>
         </div>
     );
