@@ -77,7 +77,7 @@ function TacoHook() {
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
             <h1>Taco Stack</h1>
-            <p>A simple React app for taco customization.</p> 
+            <p>A simple app for taco customization.</p> 
             <FlourHook handleClickFlour={handleClickFlour}/> 
             <CornHook handleClickCorn={handleClickCorn}/> 
         </div> 
@@ -118,7 +118,7 @@ function TacoHook() {
             </div> 
 
             <div className="monkik-icons">
-                <p>tacostack.app = React + gh-pages</p>
+                <p>tacostack.app = react + gh-pages</p>
                 <p>Icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
             </div>
   
