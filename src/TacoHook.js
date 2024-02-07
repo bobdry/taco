@@ -121,7 +121,7 @@ function TacoHook() {
 
             <div className="monkik-icons">
                 <p>tacostack.app = react + gh-pages</p>
-                <p>Icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
+                <p>icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
             </div>
   
         </div> 
