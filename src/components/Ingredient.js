@@ -1,4 +1,4 @@
-////////////////////////////IngHook.js 
+//////////////////////////// Ingredient 
 import React from 'react'; 
 
 function IngHook(props) { 

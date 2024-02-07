@@ -1,4 +1,4 @@
-////////////////////////////SubmitBoxes.js 
+//////////////////////////// SubmitBoxes 
 import React from 'react';
 
 function SubmitBoxes(props) {

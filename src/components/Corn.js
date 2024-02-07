@@ -1,4 +1,4 @@
-////////////////////////////CornHook.js 
+//////////////////////////// Corn 
 import React from 'react'; 
 
 function CornHook(props) { 

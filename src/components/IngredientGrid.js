@@ -1,4 +1,4 @@
-////////////////////////////IngredientsGridHook.js 
+//////////////////////////// IngredientGrid 
 import React from 'react'; 
 
 let isChoice = ['Chicken','Beef','al Pastor','Fish','Shrimp','Tofu','Black Beans','Pinto Beans','Lettuce','Tomatoes','Onions','Cheese','Crema','Guacamole','Red Salsa','Green Salsa']

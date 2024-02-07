@@ -1,25 +1,25 @@
-///////////////////////TacoHookjs 
+/////////////////////// Taco 
 import React, { useState } from 'react'; 
-import FlourHook from "./components/FlourHook"; 
-import CornHook from "./components/CornHook"; 
-import IngHook from "./components/IngHook"; 
-import IngredientsGridHook from './components/IngredientsGridHook'; 
+import Flour from "./components/Flour"; 
+import Corn from "./components/Corn"; 
+import Ingredient from "./components/Ingredient"; 
+import IngredientGrid from './components/IngredientGrid'; 
 import SubmitBoxes from './components/SubmitBoxes';
 import ResetOrder from './components/ResetOrder';  
 
-function TacoHook() { 
+function Taco() { 
     const [tacoChildren, setTacoChildren] = useState([]); 
     const [isHidden, setIsHidden] = useState(true);
     const [isComplete, setIsComplete] = useState(true); 
     const [tacoIngredientStack, setTacoIngredientStack] = useState([]); 
     
     function handleClickFlour () { 
-        setTacoChildren([<FlourHook key= { 0} />]); 
+        setTacoChildren([<Flour key= { 0} />]); 
         setIsHidden(false); 
     } 
     
     function handleClickCorn () { 
-        setTacoChildren([<CornHook key={ 1 }/>]); 
+        setTacoChildren([<Corn key={ 1 }/>]); 
         setIsHidden(false); 
     } 
     
@@ -42,7 +42,7 @@ function TacoHook() {
         let idx = tacoIngredientStack.length; 
         let handleIngChoice = e.target.className;
         if (idx < 9) { 
-            setTacoIngredientStack([...tacoIngredientStack, <IngHook handleIngChoice={handleIngChoice} key= {idx}/>]);  
+            setTacoIngredientStack([...tacoIngredientStack, <Ingredient handleIngChoice={handleIngChoice} key= {idx}/>]);  
         } 
         else { 
             alert('Your Taco is FULL!'); 
@@ -76,12 +76,12 @@ function TacoHook() {
     return ( 
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
-            <div class="taco-title">
+            <div className="taco-title">
                 <h1>Taco Stack</h1>
                 <p>A simple app for taco customization.</p>
             </div>
-            <FlourHook handleClickFlour={handleClickFlour}/> 
-            <CornHook handleClickCorn={handleClickCorn}/> 
+            <Flour handleClickFlour={handleClickFlour}/> 
+            <Corn handleClickCorn={handleClickCorn}/> 
         </div> 
         <div className="tacoContainer"> 
             {!isHidden && <button className="removeB" onClick={handleClickRemove}></button>} 
@@ -97,7 +97,7 @@ function TacoHook() {
             {tacoChildren} 
         </div> 
         <div className={`ingreds-vis ${isHidden ? "hide" : "show"}`}> 
-            {!isHidden && <IngredientsGridHook handleClickIngred={handleClickIngred}/>}
+            {!isHidden && <IngredientGrid handleClickIngred={handleClickIngred}/>}
             {!isHidden && <SubmitBoxes handleSubmitBoxes={handleSubmitBoxes}/>} 
         </div>
             <div className={`order-complete ${isComplete ? "undone" : "done"}`}>
@@ -113,9 +113,9 @@ function TacoHook() {
                 {tacoChildren} 
                 <h3><em>What a delicious taco!</em></h3>
                 <ResetOrder handleResetOrder={handleResetOrder}/>
-                <div class="rims">
-                <div className="taco-rim"></div>
-                <div className="taco-rim-blue"></div>
+                <div className="rims">
+                    <div className="taco-rim"></div>
+                    <div className="taco-rim-blue"></div>
                 </div>
             </div> 
 
@@ -128,4 +128,4 @@ function TacoHook() {
     ); 
 } 
         
-export default TacoHook; 
+export default Taco; 

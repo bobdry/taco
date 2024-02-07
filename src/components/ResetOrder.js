@@ -1,4 +1,4 @@
-////////////////////////////ResetOrder.js
+//////////////////////////// ResetOrder
 import React from 'react';
 
 function ResetOrder(props) {
