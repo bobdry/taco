@@ -76,8 +76,10 @@ function TacoHook() {
     return ( 
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
-            <h1>Taco Stack</h1>
-            <p>A simple app for taco customization.</p> 
+            <div class="taco-title">
+                <h1>Taco Stack</h1>
+                <p>A simple app for taco customization.</p>
+            </div>
             <FlourHook handleClickFlour={handleClickFlour}/> 
             <CornHook handleClickCorn={handleClickCorn}/> 
         </div> 

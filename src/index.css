@@ -17,7 +17,7 @@ div#root {
   margin: 0 auto;
 }
 div#root > div {
-  height: 41.0rem;
+  height: 40.5rem;
   background: #A3421A;
   margin: 0 0.5rem;
   padding: 0.25rem;
@@ -27,37 +27,39 @@ div#root > div {
 }
 
 /* title */
-.torts > h1, .torts > p {
-  line-height: 1.0rem;
-  opacity: 1.0;
-  padding: 0;
-  transition:.4s;
+.torts > .taco-title {
+  margin-top: 0;
+  padding-top: 3.0rem;
+  opacity: 1;
+  transition: .4s;
 }
-.torts > h1{
+.torts > .taco-title > h1, .torts > .taco-title > p {
+  line-height: 1.0rem;
+  padding: 0;
+}
+.torts > .taco-title > h1{
   color: #FFDE0A;
   font-size: 3.5rem;
   letter-spacing: -0.0625rem;
-  margin: 4.0rem 0 2.0rem 0;
+  margin: 2.0rem 0;
   text-shadow: 1px 1px 2px #000000;
 }
-.torts > p  {
+.torts > .taco-title > p  {
   color: #FFEF4F;
   font-size: 1.0rem;
   margin: 0 0 1.0rem 0;
 }
 @media all and (min-width: 320px) {
-  .torts > h1{font-size: 4.0rem;}
-  .torts > p  {font-size: 1.125rem;}
+  .torts > .taco-title > h1{font-size: 4.0rem;}
+  .torts > .taco-title > p  {font-size: 1.125rem;}
 }
 @media all and (min-width: 480px) {
-  .torts > h1{font-size: 4.5rem;}
-  .torts > p  {font-size: 1.3125rem;}
+  .torts > .taco-title > h1{font-size: 4.5rem;}
+  .torts > .taco-title > p  {font-size: 1.3125rem;}
 }
-.torts.up > h1, .torts.up > p {
-  font-size: 0.125rem;
-  margin: 0;
+.torts.up .taco-title {
+  margin-top: -8.0rem;
   opacity: 0;
-  text-shadow: 0;
 }
 
 /* reset button */
@@ -106,18 +108,18 @@ button.removeB:hover {
   font-size: 1.3125rem;
   margin: 0.75rem 0;
 }
-.torts > div {
+.torts > div.tortilla {
   width: 44%;
   padding: 16% 0;
   border-radius: 7rem;
   transition: .2s;
 }
-.torts.up > div {
+.torts.up > div.tortilla {
   padding: 0;
   border-radius: 1.25rem;
   margin-top: -1.5rem;
 }   
-.torts.up > div p {
+.torts.up > div.tortilla p {
   margin: 0.25rem;
 }
 
@@ -156,11 +158,11 @@ button.removeB:hover {
 }
 .ingredients > ul > li > button{
   width: 22%;
-  padding: 1.875rem 0 0.125rem 0;
+  padding: 1.75rem 0 0.125rem 0;
   cursor: pointer;
   border: 0;
   border-radius: 1rem;
-  background-size: 1.625rem 1.625rem;
+  background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 0.25rem;
@@ -420,7 +422,7 @@ div.order-complete.done {
   overflow-x: hidden;
 }
 p.submitter{
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
 }
 div.order-complete.done h3 {
   color: #FFEF4F;
@@ -450,7 +452,7 @@ div.monkik-icons {
   bottom: 0;
   font-size: 80%;
   left: 0;
-  line-height: 0.875rem;
+  line-height: 1.0rem;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -464,8 +466,8 @@ div.monkik-icons p a, div.monkik-icons p a:hover {
 }
 
 /* ingredient colors and icons */
-/* local =  /icons/ */
-/* web =  /taco/icons/ */
+/* local =  /taco/icons/ */
+/* web =  /taco/taco/icons/ */
 /* chicken */
 .ingredients > ul > li > button.Chicken{
   background-image: url(/taco/icons/chicken.svg);
