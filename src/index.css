@@ -27,21 +27,23 @@ div#root > div {
 }
 
 /* title */
+.torts > h1, .torts > p {
+  line-height: 1.0rem;
+  opacity: 1.0;
+  padding: 0;
+  transition:.4s;
+}
 .torts > h1{
   color: #FFDE0A;
   font-size: 3.5rem;
   letter-spacing: -0.0625rem;
-  line-height: 1.0rem;
   margin: 4.0rem 0 2.0rem 0;
-  padding: 0;
   text-shadow: 1px 1px 2px #000000;
 }
 .torts > p  {
   color: #FFEF4F;
   font-size: 1.0rem;
-  line-height: 1.0rem;
   margin: 0 0 1.0rem 0;
-  padding: 0;
 }
 @media all and (min-width: 320px) {
   .torts > h1{font-size: 4.0rem;}
@@ -60,7 +62,7 @@ div#root > div {
 
 /* reset button */
 button.removeB {
-  background: #5F38E8 url(/icons/back-arrow.svg) no-repeat 6px 5px;
+  background: #5F38E8 url(/taco/icons/back-arrow.svg) no-repeat 6px 5px;
   background-size: 1.5rem;
   border:0;
   border-radius: 1rem;
@@ -117,11 +119,6 @@ button.removeB:hover {
 }   
 .torts.up > div p {
   margin: 0.25rem;
-}
-.torts > h1, .torts > p {
-  opacity: 1.0;
-  transition:.4s;
-  min-height: 0.625rem;
 }
 
 /* ingredients grid */
@@ -352,7 +349,7 @@ div.order-complete div.taco-rim {
   z-index: -1;
   height: 22.5rem;
   top: 1.0rem;
-  background-image: url(/icons/taco-rim.svg);
+  background-image: url(/taco/icons/taco-rim.svg);
   background-repeat: no-repeat;
   background-position: top center;
   animation-name: stretch;
@@ -367,7 +364,7 @@ div.order-complete div.taco-rim {
     z-index: -2;
     height: 20.75rem;
     top: 2.5rem;
-    background-image: url(/icons/taco-rim-blue.svg);
+    background-image: url(/taco/icons/taco-rim-blue.svg);
     background-repeat: no-repeat;
     background-position: top center;
     animation-name: stretch-red;
@@ -467,11 +464,11 @@ div.monkik-icons p a, div.monkik-icons p a:hover {
 }
 
 /* ingredient colors and icons */
-/* local =  /taco/icons/ */
-/* web =  /icons/ */
+/* local =  /icons/ */
+/* web =  /taco/icons/ */
 /* chicken */
 .ingredients > ul > li > button.Chicken{
-  background-image: url(/icons/chicken.svg);
+  background-image: url(/taco/icons/chicken.svg);
   background-color: #FFEEB6;
   color: #805B36;
 } 
@@ -480,11 +477,11 @@ div.tacoIngredientContainer > ul > li > div.Chicken{
   color: #805B36;
 }
 div.tacoIngredientContainer > ul > li > div.Chicken:before{
-  background-image: url(/icons/chicken.svg);
+  background-image: url(/taco/icons/chicken.svg);
 }
 /* beef */
 .ingredients > ul > li > button.Beef{
-  background-image: url(/icons/cow.svg);
+  background-image: url(/taco/icons/cow.svg);
   background-color: #FFCCC6;
   color: #610010;
 } 
@@ -493,11 +490,11 @@ div.tacoIngredientContainer > ul > li > div.Beef{
   color: #610010;
 }
 div.tacoIngredientContainer > ul > li > div.Beef:before{
-  background-image: url(/icons/cow.svg);
+  background-image: url(/taco/icons/cow.svg);
 }
 /* al Pastor */
 .ingredients > ul > li > button.Pastor{
-  background-image: url(/icons/pig.svg);
+  background-image: url(/taco/icons/pig.svg);
   background-color: #FFD4D1;
   color: #8A0051;
 } 
@@ -506,11 +503,11 @@ div.tacoIngredientContainer > ul > li > div.Pastor{
   color: #8A0051;
 }
 div.tacoIngredientContainer > ul > li > div.Pastor:before{
-  background-image: url(/icons/pig.svg);
+  background-image: url(/taco/icons/pig.svg);
 }
 /* fish */
 .ingredients > ul > li > button.Fish{
-  background-image: url(/icons/fish.svg);
+  background-image: url(/taco/icons/fish.svg);
   background-color: #D9D8FF;
   color: #3B0073;
 } 
@@ -519,11 +516,11 @@ div.tacoIngredientContainer > ul > li > div.Fish{
   color: #3B0073;
 }
 div.tacoIngredientContainer > ul > li > div.Fish:before{
-  background-image: url(/icons/fish.svg);
+  background-image: url(/taco/icons/fish.svg);
 }
 /* shrimp */
 .ingredients > ul > li > button.Shrimp{
-  background-image: url(/icons/shrimp.svg);
+  background-image: url(/taco/icons/shrimp.svg);
   background-color: #FFEAF8;
   color: #635061;
 } 
@@ -532,11 +529,11 @@ div.tacoIngredientContainer > ul > li > div.Shrimp{
   color: #635061;
 }
 div.tacoIngredientContainer > ul > li > div.Shrimp:before{
-  background-image: url(/icons/shrimp.svg);
+  background-image: url(/taco/icons/shrimp.svg);
 }
 /* tofu */
 .ingredients > ul > li > button.Tofu{
-  background-image: url(/icons/tofu.svg);
+  background-image: url(/taco/icons/tofu.svg);
   background-color: #FFFAF2;
   color: #73705C;
 } 
@@ -545,11 +542,11 @@ div.tacoIngredientContainer > ul > li > div.Tofu{
   color: #73705C;
 }
 div.tacoIngredientContainer > ul > li > div.Tofu:before{
-  background-image: url(/icons/tofu.svg);
+  background-image: url(/taco/icons/tofu.svg);
 }
 /* black beans */
 .ingredients > ul > li > button.Black.Beans{
-  background-image: url(/icons/beans-b.svg);
+  background-image: url(/taco/icons/beans-b.svg);
   background-color: #bbb;
   color: #000;
 } 
@@ -558,11 +555,11 @@ div.tacoIngredientContainer > ul > li > div.Black.Beans{
   color: #000;
 }
 div.tacoIngredientContainer > ul > li > div.Black.Beans:before{
-  background-image: url(/icons/beans-b.svg);
+  background-image: url(/taco/icons/beans-b.svg);
 }
 /* pinto beans */
 .ingredients > ul > li > button.Pinto.Beans{
-  background-image: url(/icons/beans-p.svg);
+  background-image: url(/taco/icons/beans-p.svg);
   background-color: #FBDBD6;
   color: #5C2806;
 } 
@@ -571,11 +568,11 @@ div.tacoIngredientContainer > ul > li > div.Pinto.Beans{
   color: #5C2806;
 }
 div.tacoIngredientContainer > ul > li > div.Pinto.Beans:before{
-  background-image: url(/icons/beans-p.svg);
+  background-image: url(/taco/icons/beans-p.svg);
 }
 /* lettuce */
 .ingredients > ul > li > button.Lettuce{
-  background-image: url(/icons/lettuce.svg);
+  background-image: url(/taco/icons/lettuce.svg);
   background-color: #D0FFDA;
   color: #277A4E;
 } 
@@ -584,11 +581,11 @@ div.tacoIngredientContainer > ul > li > div.Lettuce{
   color: #277A4E;
 }
 div.tacoIngredientContainer > ul > li > div.Lettuce:before{
-  background-image: url(/icons/lettuce.svg);
+  background-image: url(/taco/icons/lettuce.svg);
 }
 /* tomato */
 .ingredients > ul > li > button.Tomatoes{
-  background-image: url(/icons/tomato.svg);
+  background-image: url(/taco/icons/tomato.svg);
   background-color: #FED3BD;
   color: #A32300;
 } 
@@ -597,11 +594,11 @@ div.tacoIngredientContainer > ul > li > div.Tomatoes{
   color: #A32300;
 }
 div.tacoIngredientContainer > ul > li > div.Tomatoes:before{
-  background-image: url(/icons/tomato.svg);
+  background-image: url(/taco/icons/tomato.svg);
 }
 /* onion */
 .ingredients > ul > li > button.Onions{
-  background-image: url(/icons/onion.svg);
+  background-image: url(/taco/icons/onion.svg);
   background-color: #FFFACC;
   color: #8A7E01;
 } 
@@ -610,11 +607,11 @@ div.tacoIngredientContainer > ul > li > div.Onions{
   color: #8A7E01;
 }
 div.tacoIngredientContainer > ul > li > div.Onions:before{
-  background-image: url(/icons/onion.svg);
+  background-image: url(/taco/icons/onion.svg);
 }
 /* cheese */
 .ingredients > ul > li > button.Cheese{
-  background-image: url(/icons/cheese.svg);
+  background-image: url(/taco/icons/cheese.svg);
   background-color: #FFF687;
   color: #8F6E01;
 } 
@@ -623,11 +620,11 @@ div.tacoIngredientContainer > ul > li > div.Cheese{
   color: #8F6E01;
 }
 div.tacoIngredientContainer > ul > li > div.Cheese:before{
-  background-image: url(/icons/cheese.svg);
+  background-image: url(/taco/icons/cheese.svg);
 }
 /* crema*/
 .ingredients > ul > li > button.Crema{
-  background-image: url(/icons/drop-w.svg);
+  background-image: url(/taco/icons/drop-w.svg);
   background-color: #Fff;
   color: #205685;
 } 
@@ -636,11 +633,11 @@ div.tacoIngredientContainer > ul > li > div.Crema{
   color: #205685;
 }
 div.tacoIngredientContainer > ul > li > div.Crema:before{
-  background-image: url(/icons/drop-w.svg);
+  background-image: url(/taco/icons/drop-w.svg);
 }
 /* guac */
 .ingredients > ul > li > button.Guacamole{
-  background-image: url(/icons/guac.svg);
+  background-image: url(/taco/icons/guac.svg);
   background-color: #E6FFB1;
   color: #597823
 } 
@@ -649,11 +646,11 @@ div.tacoIngredientContainer > ul > li > div.Guacamole{
   color: #597823;
 }
 div.tacoIngredientContainer > ul > li > div.Guacamole:before{
-  background-image: url(/icons/guac.svg);
+  background-image: url(/taco/icons/guac.svg);
 }
 /* red salsa */
 .ingredients > ul > li > button.Red.Salsa{
-  background-image: url(/icons/drop-r.svg);
+  background-image: url(/taco/icons/drop-r.svg);
   background-color: #FFCBBB;
   color: #782C1D;
 } 
@@ -662,7 +659,7 @@ div.tacoIngredientContainer > ul > li > div.Red.Salsa{
   color: #782C1D;
 }
 div.tacoIngredientContainer > ul > li > div.Red.Salsa:before{
-  background-image: url(/icons/drop-r.svg);
+  background-image: url(/taco/icons/drop-r.svg);
 }
 /* green salsa*/
 .ingredients > ul > li > button.Green.Salsa, div.tacoIngredientContainer > ul > li > div.Green.Salsa{
@@ -670,5 +667,5 @@ div.tacoIngredientContainer > ul > li > div.Red.Salsa:before{
   color: #316911;
 }
 .ingredients > ul > li > button.Green.Salsa, div.tacoIngredientContainer > ul > li > div.Green.Salsa:before{
-  background-image: url(/icons/drop-g.svg);
+  background-image: url(/taco/icons/drop-g.svg);
 }
