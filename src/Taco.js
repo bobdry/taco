@@ -10,7 +10,8 @@ import ResetOrder from './components/ResetOrder';
 function Taco() { 
     const [tacoChildren, setTacoChildren] = useState([]); 
     const [isHidden, setIsHidden] = useState(true);
-    const [isComplete, setIsComplete] = useState(true); 
+    const [isComplete, setIsComplete] = useState(true);
+    const [isSubmitted, setIsSubmitted] = useState(true); 
     const [tacoIngredientStack, setTacoIngredientStack] = useState([]); 
     
     function handleClickFlour () { 
@@ -49,15 +50,16 @@ function Taco() {
         } 
     } 
 
-    function handleSubmitBoxes() {
+    function handleSubmitOrder() {
         let submittedBox = [];
         if (tacoIngredientStack.length > 0) {
+            console.log(isHidden);
             submittedBox.push(tacoChildren[0].type.name);
             tacoIngredientStack.forEach(function (item) { 
                 submittedBox.push(item.type.name);
             });
-            //alert(submittedBox);
             setIsComplete(false);
+            setIsSubmitted(false);
             window.scrollTo(0,0);
         }
         else {
@@ -70,6 +72,7 @@ function Taco() {
         setTacoIngredientStack([]); 
         setIsHidden(true);
         setIsComplete(true); 
+        setIsSubmitted(true);
         window.scrollTo(0,0);
     }
 
@@ -86,44 +89,32 @@ function Taco() {
         <div className="tacoContainer"> 
             {!isHidden && <button className="removeB" onClick={handleClickRemove}></button>} 
             <div className={`tacoIngredientContainer ${isHidden ? "hide" : "show"}`}> 
-            <ul>
-            {tacoIngredientStack.map((item, idx) => ( 
-                <li key={idx} onClick={() => handleClickRemoveIngred(idx)}>
-                    {item}
-                </li>
-            ))}
-            </ul>
-            </div> 
-            {tacoChildren} 
-        </div> 
-        <div className={`ingreds-vis ${isHidden ? "hide" : "show"}`}> 
-            {!isHidden && <IngredientGrid handleClickIngred={handleClickIngred}/>}
-            {!isHidden && <SubmitBoxes handleSubmitBoxes={handleSubmitBoxes}/>} 
-        </div>
-            <div className={`order-complete ${isComplete ? "undone" : "done"}`}>
-                <div className={`tacoIngredientContainer ${isHidden ? "hide" : "show"}`}> 
                 <ul>
                 {tacoIngredientStack.map((item, idx) => ( 
-                    <li key={idx}>
+                    <li key={idx} onClick={() => handleClickRemoveIngred(idx)}>
                         {item}
                     </li>
                 ))}
                 </ul>
-                </div> 
-                {tacoChildren} 
-                <h3><em>What a delicious taco!</em></h3>
-                <ResetOrder handleResetOrder={handleResetOrder}/>
+            </div> 
+            {tacoChildren} 
+            <div className={`ingreds-vis ${isHidden ? "hide" : "show"}`}> 
+                {!isHidden && <IngredientGrid handleClickIngred={handleClickIngred}/>}
+                {!isHidden && <SubmitBoxes handleSubmitOrder={handleSubmitOrder}/>} 
+            </div>
+            <div className={`order-submitted ${isSubmitted ? "hide" : "show"}`}>
                 <div className="rims">
                     <div className="taco-rim"></div>
                     <div className="taco-rim-blue"></div>
                 </div>
-            </div> 
-
-            <div className="monkik-icons">
-                <p>tacostack.app = react + gh-pages</p>
-                <p>icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
+                <h3><em>What a delicious taco!</em></h3>
+                <ResetOrder handleResetOrder={handleResetOrder}/>
             </div>
-  
+        </div> 
+        <div className="monkik-icons">
+            <p>tacostack.app = react + gh-pages</p>
+            <p>icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
+        </div>
         </div> 
     ); 
 } 
