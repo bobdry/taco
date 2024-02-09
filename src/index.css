@@ -17,7 +17,7 @@ div#root {
   margin: 0 auto;
 }
 div#root > div {
-  height: 40.5rem;
+  height: 40.625rem;
   background: #A3421A;
   margin: 0;
   padding: 0;
@@ -207,7 +207,7 @@ div.tacoContainer > div.tortilla {
   cursor: default;
   height: 18rem;
   left: 50%;
-  margin: 0;
+  margin: 0.25rem 0 0;
   position: absolute;
   transform: translateX(-50%);
   width: 21rem;
@@ -223,7 +223,7 @@ div.tacoIngredientContainer {
   left: 50%;
   margin: 0;
   opacity:0;
-  padding: 0;
+  padding: 0.25rem 0 0;
   position: absolute;
   top: 0.625rem;
   transform: translateX(-50%);
@@ -248,7 +248,7 @@ div.tacoIngredientContainer > ul > li {
   padding-left: 6.0rem;
   position: relative;
   text-align: left;
-  width: 68%;
+  width: 66%;
 }
 div.tacoIngredientContainer > ul > li > div {
   border-bottom: 1px #5F38E8 solid;
@@ -282,7 +282,7 @@ div.tacoIngredientContainer > ul > li:nth-child(6) > div {
   padding-left: 4.75rem;
 }
 div.tacoIngredientContainer > ul > li:nth-child(7) {
-  width: 62%;
+  width: 61%;
 }
 div.tacoIngredientContainer > ul > li:nth-child(7) > div {
   border-top-right-radius: 1.0rem;
