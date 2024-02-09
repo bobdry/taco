@@ -202,8 +202,6 @@ div.tacoContainer div.tortilla.flour > p, div.tacoContainer div.tortilla.corn > 
   display: none;
 }
 div.tacoContainer > div.tortilla {
-  background-image: url(/taco/icons/.svg);
-  background-image: url(/taco/icons/flour.svg);
   cursor: default;
   height: 18rem;
   left: 50%;
@@ -304,7 +302,7 @@ div.tacoIngredientContainer > ul > li:nth-child(9) > div {
   border-bottom: 1px #5F38E8 solid;
   border-top-left-radius: 2.0rem;
   border-top-right-radius: 2.0rem;
-  padding: 0.25rem 0 .1875rem 2.875rem;
+  padding: 0.25rem 0 .125rem 2.875rem;
 }
 div.tacoContainer > div.tacoIngredientContainer > ul > li > div:hover {
   background-color: #C7331C;
@@ -385,10 +383,11 @@ div.order-submitted.show {
 div.order-submitted h3 {
   color: #FFEF4F;
   font-size: 2.0rem;
-  margin: 26.5rem 0 0.75rem 0;
+  margin: 0 0 0.75rem;
 }
 /* order complete rims */
 div.order-submitted div.rims {
+  position: relative;
   opacity: 0; 
   animation-name: taco-done;
   animation-timing-function: linear;
@@ -396,28 +395,35 @@ div.order-submitted div.rims {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+  overflow: hidden;
+  height: 26.0rem;
+  width: 100%;
 }
-div.order-submitted div.taco-rim {
+div.order-submitted div.rims div.taco-rim {
   display: none;
   position: absolute;
   z-index: 3;
-  height: 26rem;
-  top: 0.25rem;
+  height: 24rem;
+  width: 100%;
+  left: -0.75rem;
+  top: 1.5rem;
   background-image: url(/taco/icons/taco-rim.svg);
   background-repeat: no-repeat;
   background-position: top center;
   animation-name: stretch;
   animation-timing-function: linear;
-  animation-duration: 13.0s;
+  animation-duration: 11.0s;
   animation-iteration-count: infinite;
   opacity: 0.6;
   }
-  div.order-submitted div.taco-rim-blue {
+  div.order-submitted div.rims div.taco-rim-blue {
     display: none;
     position: absolute;
     z-index: 3;
     height: 24rem;
-    top: 1.375rem;
+    width: 100%;
+    left: 0.75rem;
+    top: 1.5rem;
     background-image: url(/taco/icons/taco-rim-blue.svg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -428,22 +434,10 @@ div.order-submitted div.taco-rim {
     opacity: 0.6;
   }
   @media all and (min-width: 320px) {
-    div.order-submitted div.taco-rim, div.order-submitted div.taco-rim-blue {
+    div.order-submitted div.rims div.taco-rim, div.order-submitted div.rims div.taco-rim-blue {
       display: block;
-      width: 110%;
-      margin-left: -5%;
     }
   }
-  @media all and (min-width: 480px) {
-    div.order-submitted div.taco-rim {
-      width: 26rem;
-      margin-left: 1.5rem; 
-    }
-    div.order-submitted div.taco-rim-blue {
-      width: 24rem;
-      margin-left: 2.375rem; 
-    }
-  } 
   @keyframes stretch {
     0% {
       -webkit-transform: rotate(0);
