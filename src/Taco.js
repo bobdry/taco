@@ -10,7 +10,6 @@ import ResetOrder from './components/ResetOrder';
 function Taco() { 
     const [tacoChildren, setTacoChildren] = useState([]); 
     const [isHidden, setIsHidden] = useState(true);
-    const [isComplete, setIsComplete] = useState(true);
     const [isSubmitted, setIsSubmitted] = useState(true); 
     const [tacoIngredientStack, setTacoIngredientStack] = useState([]); 
     
@@ -28,6 +27,10 @@ function Taco() {
         setTacoChildren([]); 
         setTacoIngredientStack([]); 
         setIsHidden(true); 
+    } 
+
+    function handleClickReset () { 
+        setTacoIngredientStack([]); 
     } 
 
     function handleClickRemoveIngred (idx) {
@@ -53,12 +56,10 @@ function Taco() {
     function handleSubmitOrder() {
         let submittedBox = [];
         if (tacoIngredientStack.length > 0) {
-            console.log(isHidden);
             submittedBox.push(tacoChildren[0].type.name);
             tacoIngredientStack.forEach(function (item) { 
                 submittedBox.push(item.type.name);
             });
-            setIsComplete(false);
             setIsSubmitted(false);
             window.scrollTo(0,0);
         }
@@ -70,8 +71,7 @@ function Taco() {
     function handleResetOrder() {
         setTacoChildren([]); 
         setTacoIngredientStack([]); 
-        setIsHidden(true);
-        setIsComplete(true); 
+        setIsHidden(true); 
         setIsSubmitted(true);
         window.scrollTo(0,0);
     }
@@ -87,7 +87,8 @@ function Taco() {
             <Corn handleClickCorn={handleClickCorn}/> 
         </div> 
         <div className="tacoContainer"> 
-            {!isHidden && <button className="removeB" onClick={handleClickRemove}></button>} 
+            {!isHidden && <button className="removeB taco-back" onClick={handleClickRemove}></button>} 
+            {!isHidden && <button className="removeB taco-reset" onClick={handleClickReset}></button>} 
             <div className={`tacoIngredientContainer ${isHidden ? "hide" : "show"}`}> 
                 <ul>
                 {tacoIngredientStack.map((item, idx) => ( 
