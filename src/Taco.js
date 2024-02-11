@@ -85,6 +85,7 @@ function Taco() {
             </div>
             <Flour handleClickFlour={handleClickFlour}/> 
             <Corn handleClickCorn={handleClickCorn}/> 
+            {isHidden && <p><strong>Pick a shell.</strong></p>}
         </div> 
         <div className="tacoContainer"> 
             {!isHidden && <button className="removeB taco-back" onClick={handleClickRemove}></button>} 
