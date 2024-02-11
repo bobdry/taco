@@ -255,11 +255,16 @@ div.tacoIngredientContainer > ul > li {
 }
 div.tacoIngredientContainer > ul > li > div {
   border-bottom: 1px #5F38E8 solid;
-  padding: 0.25rem 0 0.1875rem 1.125rem;
+  padding: 0.1875rem 0 0.1875rem 1.125rem;
+}
+@media all and (min-width: 480px) {
+  div.tacoIngredientContainer > ul > li > div {
+    padding: 0.25rem 0 0.1875rem 1.125rem;
+  }
 }
 div.tacoIngredientContainer > ul > li:nth-child(1) {
   margin-bottom: 01.625rem;
-  width: 64%;
+  width: 63%;
 }
 div.tacoIngredientContainer > ul > li:nth-child(1) > div {
   padding-bottom: 0.5rem;
@@ -285,14 +290,14 @@ div.tacoIngredientContainer > ul > li:nth-child(6) > div {
   padding-left: 4.75rem;
 }
 div.tacoIngredientContainer > ul > li:nth-child(7) {
-  width: 63%;
+  width: 65%;
 }
 div.tacoIngredientContainer > ul > li:nth-child(7) > div {
   border-top-right-radius: 1.0rem;
   padding-left: 4.875rem;
 }
 div.tacoIngredientContainer > ul > li:nth-child(8) {
-  width: 60%;
+  width: 62%;
 }
 div.tacoIngredientContainer > ul > li:nth-child(8) > div {
   border-top-right-radius: 1.5rem;
@@ -300,13 +305,13 @@ div.tacoIngredientContainer > ul > li:nth-child(8) > div {
 }
 div.tacoIngredientContainer > ul > li:nth-child(9) {
   margin-left: 0;
-  width:54.25%;
+  width:58%;
 }
 div.tacoIngredientContainer > ul > li:nth-child(9) > div {
   border-top: 1px #5F38E8 solid;
   border-top-left-radius: 2.0rem;
   border-top-right-radius: 3.0rem;
-  padding: 0.25rem 0 0.1875rem 3.0rem;
+  padding: 0.25rem 0 0.1875rem 3.75rem;
 }
 div.tacoContainer > div.tacoIngredientContainer > ul > li > div:hover {
   background-color: #C7331C;
