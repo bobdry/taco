@@ -80,7 +80,7 @@ function Taco() {
         <div> 
         <div className={`torts ${isHidden ? "down" : "up"}`}>
             <div className="taco-title">
-                <h1>Taco Stack</h1>
+                <h1>Infinite Taco</h1>
                 <p>A simple app for taco customization.</p>
             </div>
             <Flour handleClickFlour={handleClickFlour}/> 
@@ -114,7 +114,7 @@ function Taco() {
             </div>
         </div> 
         <div className="monkik-icons">
-            <p>tacostack.app = react + gh-pages</p>
+            <p>Infinite Taco = react + gh-pages</p>
             <p>icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
         </div>
         </div> 
