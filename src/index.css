@@ -258,7 +258,7 @@ div.tacoIngredientContainer > ul > li > div {
   padding: 0.3125rem 0 0 2.0rem;
 }
 div.tacoIngredientContainer > ul > li:nth-child(1) {
-  margin-bottom: 01.75rem;
+  margin-bottom: 2.0rem;
   width: 64%;
 }
 div.tacoIngredientContainer > ul > li:nth-child(1) > div {
@@ -421,8 +421,8 @@ div.order-submitted div.rims div.taco-rim {
   z-index: 3;
   height: 24rem;
   width: 100%;
-  left: -1.0rem;
-  top: 1.0rem;
+  left: -0.75rem;
+  top: 0.75rem;
   background-image: url(/taco/icons/taco-rim.svg);
   background-repeat: no-repeat;
   background-position: top center;

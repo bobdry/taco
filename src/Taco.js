@@ -14,12 +14,12 @@ function Taco() {
     const [tacoIngredientStack, setTacoIngredientStack] = useState([]); 
     
     function handleClickFlour () { 
-        setTacoChildren([<Flour key= { 0} />]); 
+        setTacoChildren([<Flour key= {0}/>]); 
         setIsHidden(false); 
     } 
     
     function handleClickCorn () { 
-        setTacoChildren([<Corn key={ 1 }/>]); 
+        setTacoChildren([<Corn key={1}/>]); 
         setIsHidden(false); 
     } 
     

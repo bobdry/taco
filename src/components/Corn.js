@@ -5,7 +5,6 @@ function CornHook(props) {
     return ( 
         <div className="tortilla corn" onClick={props.handleClickCorn} > 
         <p>Corn</p>
-            {props.tacoIngredientStack} 
         </div> 
     ); 
 } 
