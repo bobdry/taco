@@ -54,18 +54,6 @@ button {
 button:hover {
   background-color: #2356ff;
 }
-button.taco-reset {
-  background: #5F38E8 url(/icons/back-arrow.svg) no-repeat 0.3125rem 0.25rem;
-  background-size: 1.625rem;
-  right: 0.625rem;
-  top: -2.4125rem;
-}
-button.taco-back {
-  background: #5F38E8 url(/icons/back-x.svg) no-repeat 0.3125rem;
-  background-size: 1.625rem;
-  left: 0.625rem;
-  top: -2.4125rem;
-}
 /* taco time */
 div#root {
   margin: 0 auto;
@@ -228,7 +216,7 @@ li.new-taco > form{
   z-index: 3;
 }
 li.new-taco > form > button{
-  background: transparent url(/icons/startburst.svg) no-repeat top center;
+  background: rgba(255, 255, 50, 0.2) url(/icons/startburst.svg) no-repeat top center;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
@@ -244,7 +232,7 @@ li.new-taco > form > button{
   width: 100%;
 }
 li.new-taco > form > button:hover{
-  background: transparent url(/icons/startburst-hover.svg) no-repeat top center;
+  background-color: rgba(255, 180, 80, 0.2);
 }
 div.taco-container ul li {
   background: blue;

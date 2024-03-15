@@ -23,14 +23,12 @@ export default function Index() {
   const { tacos } = useLoaderData();
     return (
       <>
-            {tacos.length ? (
               <ul className="taco-row">
                 <li className="new-taco">
                 <div className="taco-top"></div>
                   <Form method="post">
                     <button type="submit">New Taco</button>
                   </Form>
-                  <p>Today!</p>
                 </li>
                 {tacos.map((taco) => {
                 if(taco.taconame) { 
@@ -52,11 +50,6 @@ export default function Index() {
                 }}
                 )}
               </ul>
-            ) : (
-              <p>
-                <i>No new tacos yet.</i>
-              </p>
-            )}
             <Signature />
       </>
     );
