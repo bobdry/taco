@@ -78,9 +78,9 @@ div.header.home {
   padding: 0.75rem 0 1.25rem 0;
 }
 div.header h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 2.0rem;
-  margin: 0.25rem 0 0.375rem 0;
+  margin: 0.125rem 0 0.375rem 0;
   text-shadow: 1px 1px 2px #000000;
 }
 div.header.home h1 {
@@ -146,13 +146,13 @@ ul.taco-row {
   padding: 1.375rem 0 0.125rem 0;
   cursor: pointer;
   border: 0;
-  border-radius: 0.625rem;
+  border-radius: 0.5rem;
   background-size: 1.25rem 1.25rem;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 0.25rem;
   font-size: 0.625rem;
-  margin: 0.125rem;
+  margin: 0.06225rem;
   width: 4.75rem;
 }
 @media (min-width:370px) {
@@ -219,13 +219,13 @@ div.taco-container p {
   width: 100%;
 }
 ul.edit-row li div.taco-container {
-  background-position: -0.5rem -0.125rem;
-  background-size: 21.0rem 20.0rem;
-  height: 19.0rem; 
+  background-position: 0 -0.1875rem;
+  background-size: 20.375rem 20.0rem;
+  height: 18.25rem; 
 }
 ul.edit-row li div.taco-container ul {
   position: absolute;
-  bottom: 2.25rem;
+  bottom: 1.5rem;
 }
 ul.edit-row li div.taco-container p {
   display: none;
@@ -536,9 +536,9 @@ form span.field-label {
 button.refresh-button {
   background-image: url(/icons/refresh.svg);
   background-repeat: no-repeat;
-  background-position: 0.75rem 0.375rem;
+  background-position: 0.6125rem 0.3125rem;
   background-size: 1.3125rem;
-  width: 2.75rem;
+  width: 2.5rem;
 }
 @media (min-width:500px) {
   button.refresh-button {
