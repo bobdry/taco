@@ -26,7 +26,7 @@ export default function EditTaco() {
 
 const addOption = (e) => {
     let l = options.length; 
-    if (l < 13) { 
+    if (l < 10) { 
       const optionsStack = [...options];
       optionsStack.unshift('' + e.target.className +'');
       setOptions(optionsStack);  

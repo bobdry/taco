@@ -29,6 +29,7 @@ export default function Index() {
                   <Form method="post">
                     <button type="submit">New Taco</button>
                   </Form>
+                  <p><em>Stack your own taco!</em></p>
                 </li>
                 {tacos.map((taco) => {
                 if(taco.taconame) { 
