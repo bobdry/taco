@@ -24,7 +24,7 @@ const defaultTacos = [
 const Signature = () => {
     return (     
         <>
-            <h3>Signature TacoStacks</h3>
+            <h3>Signature Tacos</h3>
             <ul className="taco-row signature-tacos">
                 {defaultTacos.map((taco) => {
                     const optionsArr = taco.postOptions?.length ? taco.postOptions.split(',') : [];

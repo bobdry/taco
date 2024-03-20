@@ -33,7 +33,7 @@ button {
   border: none;
   border-radius: 0.625rem;
   box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
-  font-size: 0.875rem;
+  font-size: 1.0rem;
   line-height: 1.25;
   margin: 0 0.375rem;
   padding: 0.375rem 0.625rem 0.3125rem 0.625rem;
@@ -72,7 +72,7 @@ div#root {
 }
 /* header */
 div.header {
-  padding: 0.5rem 0 0;
+  padding: 0.25rem 0 0;
 }
 div.header.home {
   padding: 0.75rem 0 1.25rem 0;
@@ -82,6 +82,14 @@ div.header h1 {
   line-height: 2.0rem;
   margin: 0.125rem 0 0.375rem 0;
   text-shadow: 1px 1px 2px #000000;
+}
+@media (min-width:500px) {
+  div.header {
+    padding: 1.0rem 0 0.25rem;
+  }
+  div.header h1 {
+    font-size: 2.75rem;
+  }
 }
 div.header.home h1 {
   font-size: 4.0rem;
@@ -130,9 +138,14 @@ ul.taco-row {
   background: green
 } 
 .ingredients{
-  margin: 0.5rem auto;
+  margin: 0.375rem auto;
   max-width: 35.0rem;
   padding: 0 0.0625rem 0.0625rem 0;
+}
+@media (min-width:500px) {
+  .ingredients{
+    margin: 0.5rem auto;
+  }
 }
 .ingredients > ul {
   padding: 0;
@@ -147,12 +160,12 @@ ul.taco-row {
   cursor: pointer;
   border: 0;
   border-radius: 0.5rem;
-  background-size: 1.25rem 1.25rem;
+  background-size: 1.125rem 1.125rem;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 0.25rem;
+  background-position-y: 0.3125rem;
   font-size: 0.625rem;
-  margin: 0.06225rem;
+  margin: 0.125rem;
   width: 4.75rem;
 }
 @media (min-width:370px) {
@@ -166,7 +179,7 @@ ul.taco-row {
     background-size: 1.5rem 1.5rem;
     border-radius: 0.75rem;
     font-size: 0.75rem;
-    margin: 0.375rem;
+    margin: 0.25rem;
     padding: 1.875rem 0 0.25rem 0;
     width: 6.0rem;
   }
@@ -289,13 +302,13 @@ li.new-taco > form > button:hover{
   background-color: rgba(255, 180, 80, 0.2);
 }
 li.new-taco > p {
-  bottom: 5.25rem;
-  color: #631d00;
-  font-size: 1.5rem;
+  bottom: 4.75rem;
+  color: #fcf883;
+  font-size: 1.75rem;
   font-weight: 700;
   left: 0;
   position: absolute;
-  text-shadow: 1px 1px 7px orange;
+  text-shadow: 1px 1px 4px #5f2d01;
   width: 100%;
   z-index: 2;
 }
@@ -325,21 +338,24 @@ div.taco-container ul li:nth-child(8) {padding: 0.25rem 0 0 5.25rem;}
 div.taco-container ul li:nth-child(9) {padding: 0.25rem 0 0 5.5rem;} */
 
 div.taco-container p.taco-name {
-  bottom: -1.0rem;
-  color: #df6400;
-  font-family: georgia;
-  font-size: 1.375rem;
+  bottom: -1.4125rem;
+  color: #2374FF;
+  font-size: 1.5rem;
   font-style: italic;
+  font-weight: 600;
   left: 0;
   line-height: 1.75rem;
+  padding: 0.3125rem 0 0.25rem 0;
   position: absolute;
   width: 100%;
 }
 /* footer */
 div.footer {
-  padding: 1.5rem 0;
+  padding: 0.75rem 0;
 }
 div.footer p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   margin: 0;
 }
 div.footer p a{
@@ -347,6 +363,15 @@ div.footer p a{
 }
 div.footer p a:hover{
   color: orange;
+}
+@media (min-width:500px) {
+  div.footer {
+    padding: 1.0rem 0;
+  }
+  div.footer p {
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+  }
 }
 /* ingredient colors and icons */
 /* chicken */
@@ -512,7 +537,7 @@ div.footer p a:hover{
 
 /* forms */
 div.edit-form, div.taco-form {
-  margin: 0.5rem 0 0 0;
+  margin: 0.375rem 0 0 0;
 }
 @media (min-width:500px) {
   div.edit-form, div.taco-form {
@@ -540,20 +565,24 @@ button.refresh-button {
   background-size: 1.3125rem;
   width: 2.5rem;
 }
-@media (min-width:500px) {
-  button.refresh-button {
-    background-position: 0.5rem 0.375rem;
-    background-size: 1.75rem;
-  }
-}
 button.back-button {
   background-image: url(/icons/back.svg);
   background-repeat: no-repeat;
-  background-position: 1.0rem;
-  background-size: 1.5rem;
+  background-position: 1.375rem 0.375rem;
+  background-size: 1.25rem;
   padding-left: 2.0rem;
   width: 6.875rem;
 }
 div.taco-form button.back-button {
   margin: 0;
+}
+@media (min-width:500px) {
+  button.refresh-button {
+    background-position: 0.5rem 0.375rem;
+    background-size: 1.75rem;
+    width: 2.75rem;
+  }
+  button.back-button {
+    background-position: 1.0rem;
+  }
 }

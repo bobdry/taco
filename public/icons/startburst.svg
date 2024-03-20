@@ -7,8 +7,8 @@
 	.st1{fill:#2374FF;}
 </style>
 <radialGradient id="SVGID_1_" cx="166.05" cy="207.0127" r="188.7489" gradientTransform="matrix(0.9997 0 0 0.7703 0 1.5284)" gradientUnits="userSpaceOnUse">
-	<stop  offset="0.33" style="stop-color:#FFFBF7;stop-opacity:0"/>
-	<stop  offset="1" style="stop-color:#FF8A00;stop-opacity:0.5"/>
+	<stop  offset="0.5" style="stop-color:#FFFBF7;stop-opacity:0"/>
+	<stop  offset="1" style="stop-color:#FF8A00;stop-opacity:0.4"/>
 </radialGradient>
 <path class="st0" d="M172.7,123.9c-3.7-2.3-3.4-2.7,0.7-0.8l158.5,69.7l0,0V156c-0.3,0-0.5-0.1-0.8-0.2l-156.8-34.3
 	c-4.6-1-4.5-1.5,0.3-1l156.3,14.6c0.4,0,0.7,0.1,1.1,0.2V104c-0.4,0.1-0.7,0.2-1.1,0.2l-156.3,14.7c-4.7,0.5-4.9,0-0.3-1l156.8-34.3
