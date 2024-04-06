@@ -1,8 +1,8 @@
 const Footer = () => {
     return (     
         <div className="footer">
-            <p>TacoStack = react + gh-pages</p>
-            <p>icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a></p>
+            <p>&copy;2024 TacoStack.app, All rights reserved. 
+            Icons by <a href="https://www.flaticon.com/authors/monkik" title="monkik" target="_blank" rel="noopener noreferrer">monkik</a>.</p>
         </div> 
     ); 
 } 

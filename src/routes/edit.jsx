@@ -9,8 +9,6 @@ import { updateTaco } from "../tacos";
 import TacoContainer from "./../components/tacoContainer";
 import TacoOptions from "./../components/tacoOptions";
 
-let formOptions = [];
-
 export async function action({ request, params }) {
     const formData = await request.formData();
     const updates = Object.fromEntries(formData);

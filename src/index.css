@@ -104,6 +104,52 @@ div.header h2 {
 div.header.home h2 {
   display: block;
 }
+div.header a {
+  background: #ffef4f;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  height: 2.125rem;
+  margin: 0.125rem 0 0;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  width: 1.75em;
+}
+div.header.home a {
+  margin: 1.25rem 0 0;
+}
+div.header a:first-of-type {
+  float: left;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+div.header a:last-of-type {
+  float: right;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+div.header a:hover {
+  background: #fffac3;
+}
+div.header svg {
+  fill: #a3421a;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width:500px) {
+  div.header a {
+      border-radius: 1.75rem !important;
+      height: 2.75rem;
+      margin: 0.875rem 1.0rem 0;
+      padding: 0.3125rem 0.25rem 0.375rem 0.25rem;
+      width: 2.25em;
+  }
+}
+@media (min-width:800px) {
+  div.header a {
+      margin: 0.625rem 6.0rem 0;
+  }
+}
 /* body */
 div#stacks h3 {
   font-size: 1.75rem;
