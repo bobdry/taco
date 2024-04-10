@@ -373,11 +373,12 @@ li.new-taco > p {
 }
 div.taco-container ul li {
   background: blue;
+  font-size: 1.0625rem;
   height: 1.5rem;
   line-height: 1.0rem;
   margin: 0 0 0 4.0rem;
-  padding: 0.25rem 0 0 5.75rem;
-  text-align: left;
+  padding: 0.25rem 0 0 3.75rem;
+  text-align: center;
   width:  13.0rem;
 }
 div.taco-container ul li:first-child {
