@@ -341,13 +341,13 @@ li.new-taco > form{
   width: 100%;
   z-index: 3;
 }
-li.new-taco > form > button{
+li.new-taco > form > button.new-taco{
   background: rgba(255, 255, 50, 0.01) url(/icons/star.svg) no-repeat top center;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
   font-family: questa-sans, sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.375rem;
   font-weight: 700;
   height: 19.875rem;
   line-height: 2.25rem;

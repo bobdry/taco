@@ -27,7 +27,7 @@ export default function Index() {
                 <li className="new-taco">
                 <div className="taco-top"></div>
                   <Form method="post">
-                    <button type="submit">New Taco</button>
+                    <button className="new-taco" type="submit">New Taco</button>
                   </Form>
                   <p><em>Stack the delicious!</em></p>
                 </li>
