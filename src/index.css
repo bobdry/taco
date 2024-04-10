@@ -342,7 +342,7 @@ li.new-taco > form{
   z-index: 3;
 }
 li.new-taco > form > button{
-  background: rgba(255, 255, 50, 0.01) url(/icons/startburst.svg) no-repeat top center;
+  background: rgba(255, 255, 50, 0.01) url(/icons/star.svg) no-repeat top center;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
