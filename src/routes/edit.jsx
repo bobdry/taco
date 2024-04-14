@@ -55,7 +55,6 @@ const resetOptions = () => {setOptions([])}
               defaultValue={taco.taconame}
               required
             />
-            <button className="refresh-button" type="button" onClick={resetOptions}>&nbsp;</button>
           </div>
           <div>
             <TacoOptions addOption={addOption}/>
@@ -68,8 +67,9 @@ const resetOptions = () => {setOptions([])}
               onClick={() => {
                 navigate(-1);
               }}
-            >Back</button>
+            >&nbsp;</button>
             <button type="submit">Save</button>
+            <button className="refresh-button" type="button" onClick={resetOptions}>&nbsp;</button>
           </div>
         </Form>
       </div>

@@ -41,12 +41,13 @@ export default function Taco() {
               navigate('/');
             }}
           >
-          Back
+          &nbsp;
           </button>
           <Form action="edit">
             <button type="submit">Edit</button>
           </Form>
           <Form
+            className="delete-form"
             method="post"
             action="destroy"
             onSubmit={(event) => {
@@ -59,7 +60,12 @@ export default function Taco() {
               }
             }}
           >
-            <button type="submit">Delete</button>
+            <button 
+              className="delete-button"
+              type="submit"
+            >
+            &nbsp;
+            </button>
           </Form>
         </div>
       </div>
