@@ -177,8 +177,7 @@ ul.taco-row {
   gap: 1.0rem;
   justify-content: center;
 }
-
-ul.taco-row li {
+ul.taco-row.home-stacks > li {
   margin-bottom: 1.0rem;
 }
 /* ingredient grid */

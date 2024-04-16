@@ -23,7 +23,7 @@ export default function Index() {
   const { tacos } = useLoaderData();
     return (
       <>
-              <ul className="taco-row">
+              <ul className="taco-row home-stacks">
                 <li className="new-taco">
                 <div className="taco-top"></div>
                   <Form method="post">
