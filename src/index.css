@@ -115,23 +115,29 @@ div.header a {
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 800;
-  height: 2.125rem;
-  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
-  width: 1.75em;
-}
-div.header a {
-  margin: -0.5rem 0 0;
-}
-div.header.home a {
-  margin: -0.5rem 0 0;
+  height: 3.5rem;
+  padding: 0;
+  width: 3.5rem;
 }
 div.header a:first-of-type {
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 1.75rem;
   float: left;
+  margin: -1.0rem 0 0 -0.75rem;
+}
+div.header a:first-of-type svg {
+  height: 2.0rem;
+  margin: 0.9125rem 0 0 0.625rem;
+  width: 2.0rem;
 }
 div.header a:last-of-type {
-  border-bottom-left-radius: 0.5rem;
+  border-radius: 1.75rem;
   float: right;
+  margin: -1.0rem -0.75rem 0 0;
+}
+div.header a:last-of-type svg {
+  height: 2.0rem;
+  margin: 1.0rem 0.5rem 0 0;
+  width: 2.0rem;
 }
 div.header a:hover {
   background: #fffac3;
@@ -153,10 +159,16 @@ div.header svg {
     margin: 0.25rem 1.0rem 0 !important;
   }
   div.header a:first-of-type {
-    border-bottom-right-radius: 1.75rem;
+    margin: -1.0rem 0 0 -0.75rem;
+  }
+  div.header a:first-of-type svg {
+    margin: 0.0625rem 0 0;
   }
   div.header a:last-of-type {
-    border-bottom-left-radius: 1.75rem;
+    margin: -1.0rem 0 0 -0.75rem;
+  }
+  div.header a:last-of-type svg {
+    margin: 0.0625rem 0 0;
   }
 }
 @media (min-width:800px) {
