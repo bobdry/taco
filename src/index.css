@@ -157,7 +157,7 @@ div.header svg {
     width: 2.25em;
   }
   div.header a, div.header.home a {
-    margin: 0.25rem 1.0rem 0 !important;
+    margin: 0.625rem 1.0rem 0 !important;
   }
   div.header a:first-of-type {
     margin: -1.0rem 0 0 -0.75rem;
@@ -174,7 +174,7 @@ div.header svg {
 }
 @media (min-width:800px) {
   div.header a, div.header.home a {
-    margin: 0.25rem 6.0rem 0 !important;
+    margin: 0.75rem 6.0rem 0 !important;
   }
 }
 /* body */
