@@ -74,7 +74,8 @@ div#root {
 }
 /* header */
 div.header {
-  padding: 0 0 0.5rem 0;
+  overflow: hidden;
+  padding: 0 0 0.25rem 0;
 }
 div.header.home {
   padding: 0;
@@ -122,21 +123,21 @@ div.header a {
 div.header a:first-of-type {
   border-radius: 1.75rem;
   float: left;
-  margin: -1.0rem 0 0 -0.75rem;
+  margin: -0.5rem 0 0 -0.75rem;
 }
 div.header a:first-of-type svg {
   height: 2.0rem;
-  margin: 0.9125rem 0 0 0.625rem;
+  margin: 0.875rem 0 0 0.4125rem;
   width: 2.0rem;
 }
 div.header a:last-of-type {
   border-radius: 1.75rem;
   float: right;
-  margin: -1.0rem -0.75rem 0 0;
+  margin: -0.5rem -0.75rem 0 0;
 }
 div.header a:last-of-type svg {
   height: 2.0rem;
-  margin: 1.0rem 0.5rem 0 0;
+  margin: 0.9125rem 0.415rem 0 0;
   width: 2.0rem;
 }
 div.header a:hover {
