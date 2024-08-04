@@ -6,10 +6,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
+/* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925 */
 html,
 body {
-  background: #ce5d11;
-  background-image: linear-gradient(#b04013, #ce5d11);
+  background: #a6380c;
+  background-image: linear-gradient(#a6380c, #f67925);
   background-repeat: no-repeat;
   color: #ffef4f;
   font-family: questa-sans, sans-serif;
@@ -237,12 +238,15 @@ ul.taco-row.home-stacks > li {
   cursor: pointer;
   border: 0;
   border-radius: 0.375rem;
-  background-size: 1.125rem 1.125rem;
+  background-color: #a6380c;
+  background-size: 1.625rem 1.625rem;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 0.3125rem;
   font-size: 0.625rem;
   margin: 0.125rem;
+  overflow: hidden;
+  text-indent: -40.0rem;
   width: 4.75rem;
 }
 @media (min-width:370px) {
@@ -253,11 +257,11 @@ ul.taco-row.home-stacks > li {
 @media (min-width:440px) {
   .ingredients > ul > li > button {
     background-position-y: 0.375rem;
-    background-size: 1.5rem 1.5rem;
+    background-size: 2.75rem 2.75rem;
     border-radius: 0.375rem;
-    font-size: 0.75rem;
-    margin: 0.25rem;
-    padding: 1.875rem 0 0.25rem 0;
+    font-size: 1.0rem;
+    margin: 0.125rem;
+    padding: 1.0rem 0;
     width: 6.0rem;
   }
 }
@@ -266,8 +270,10 @@ ul.taco-row.home-stacks > li {
     width: 7.0rem;
   }
 }
+/* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925 */
 .ingredients > ul > li > button:hover{
-  background-color: #D7FFFF !important;
+  background-color: #e86e1b !important;
+  border-color: #f67925 !important;
 }
 .ingreds-vis { 
   display: none;
@@ -391,15 +397,26 @@ li.new-taco > p {
   width: 100%;
   z-index: 2;
 }
+/* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925 */
+div.taco-container ul {
+  background: #b04013;
+  border-top-left-radius: 1.0rem;
+  border-top-right-radius: 1.0rem;
+  margin: 0 0 0 7.0rem;
+}
 div.taco-container ul li {
   background: transparent;
+  border-bottom: 0 !important;
   font-size: 1.0625rem;
   height: 1.6875rem;
   line-height: 1.0rem;
-  margin: 0 0 0 7.0rem;
+  margin: 0;
   padding: 0.3125rem 0 0 2.875rem;
   text-align: left;
   width:  10.625rem;
+}
+div.taco-container ul li:nth-child(even) {
+  background: rgba(80,40,0,0.5)
 }
 div.taco-container ul li::after {
   background-position: top right; 
@@ -418,14 +435,12 @@ div.taco-container ul li:first-child {
 div.taco-container ul li:last-child {
   height: 2.0rem;
 }
-/* div.taco-container ul li:nth-child(1), div.taco-container ul li:nth-child(2), div.taco-container ul li:nth-child(3), div.taco-container ul li:nth-child(4), div.taco-container ul li:nth-child(5) {
-  padding: 0.25rem 0 0 0;
-  text-align: center;
-} */
-/* div.taco-container ul li:nth-child(6) {padding: 0.25rem 0 0 4.5rem;}
-div.taco-container ul li:nth-child(7) {padding: 0.25rem 0 0 5.0rem;}
-div.taco-container ul li:nth-child(8) {padding: 0.25rem 0 0 5.25rem;}
-div.taco-container ul li:nth-child(9) {padding: 0.25rem 0 0 5.5rem;} */
+/* div.taco-container ul li:nth-child(1) {padding: 0.25rem 0 0 1.0rem;}
+div.taco-container ul li:nth-child(2) {padding: 0.25rem 0 0 1.0rem;}
+div.taco-container ul li:nth-child(3) {padding: 0.25rem 0 0 1.25rem;}
+div.taco-container ul li:nth-child(4) {padding: 0.25rem 0 0 1.5rem;}
+div.taco-container ul li:nth-child(5) {padding: 0.25rem 0 0 1.875rem;}
+div.taco-container ul li:nth-child(6) {padding: 0.25rem 0 0 2.5rem;} */
 
 div.taco-container p.taco-name {
   bottom: -1.4125rem;
@@ -465,162 +480,199 @@ div.footer p a:hover{
   }
 }
 /* ingredient colors and icons */
+/* size adjusted */
+.ingredients > ul > li > button.Chicken, 
+.ingredients > ul > li > button.Shrimp, 
+.ingredients > ul > li > button.Brown.Rice,
+.ingredients > ul > li > button.White.Rice,
+.ingredients > ul > li > button.Quinoa,
+.ingredients > ul > li > button.Lettuce,
+.ingredients > ul > li > button.Tomatoes, 
+.ingredients > ul > li > button.Onions, 
+.ingredients > ul > li > button.Crema, 
+.ingredients > ul > li > button.Guacamole, 
+.ingredients > ul > li > button.Red.Salsa, 
+.ingredients > ul > li > button.Green.Salsa {
+  background-position-y: 0.5rem;
+  background-size: 1.25rem 1.25rem;
+}
+@media (min-width:440px) {
+  .ingredients > ul > li > button.Chicken, 
+  .ingredients > ul > li > button.Shrimp, 
+  .ingredients > ul > li > button.Brown.Rice,
+  .ingredients > ul > li > button.White.Rice,
+  .ingredients > ul > li > button.Quinoa,
+  .ingredients > ul > li > button.Lettuce,
+  .ingredients > ul > li > button.Tomatoes, 
+  .ingredients > ul > li > button.Onions, 
+  .ingredients > ul > li > button.Crema, 
+  .ingredients > ul > li > button.Guacamole, 
+  .ingredients > ul > li > button.Red.Salsa, 
+  .ingredients > ul > li > button.Green.Salsa {
+    background-position-y: 0.625rem;
+    background-size: 2.125rem 2.25rem;
+  }
+}
 /* chicken */
 .ingredients > ul > li > button.Chicken, div.taco-container > ul > li.Chicken {
-  background-color: #FFEEB6;
-  color: #805B36;
+  /* background-color: #c67e00; */
+  border: 0.0625rem #FFEEB6 solid;
+  color: #FFEEB6;
 }
 .ingredients > ul > li > button.Chicken, div.taco-container > ul > li.Chicken:before, div.taco-container ul li.Chicken::after {
   background-image: url(/icons/chicken.svg);
 }
 /* beef */
 .ingredients > ul > li > button.Beef, div.taco-container > ul > li.Beef{
-  background-color: #FFCCC6;
-  color: #610010;
+  /* background-color: #610010; */
+  border: 0.0625rem #FFCCC6 solid;
+  color: #FFCCC6;
 }
 .ingredients > ul > li > button.Beef, div.taco-container > ul > li.Beef:before, div.taco-container ul li.Beef::after {
   background-image: url(/icons/cow.svg);
 }
 /* al Pastor */
 .ingredients > ul > li > button.Pastor, div.taco-container > ul > li.Pastor{
-  background-color: #FFD4D1;
-  color: #8A0051;
+  border: 0.0625rem #FFD4D1 solid;
+  color: #FFD4D1;
 }
 .ingredients > ul > li > button.Pastor, div.taco-container > ul > li.Pastor:before, div.taco-container ul li.Pastor::after {
   background-image: url(/icons/pig.svg);
 }
 /* fish */
 .ingredients > ul > li > button.Fish, div.taco-container > ul > li.Fish{
-  background-color: #D9D8FF;
-  color: #3B0073;
+  border: 0.0625rem #D9D8FF solid;
+  color: #D9D8FF;
 }
 .ingredients > ul > li > button.Fish, div.taco-container > ul > li.Fish:before, div.taco-container ul li.Fish::after {
   background-image: url(/icons/fish.svg);
 }
 /* shrimp */
 .ingredients > ul > li > button.Shrimp, div.taco-container > ul > li.Shrimp{
-  background-color: #FFEAF8;
-  color: #635061;
+  border: 0.0625rem #FFEAF8 solid;
+  color: #FFEAF8;
 }
 .ingredients > ul > li > button.Shrimp, div.taco-container > ul > li.Shrimp:before, div.taco-container ul li.Shrimp::after {
   background-image: url(/icons/shrimp.svg);
 }
 /* tofu */
 .ingredients > ul > li > button.Tofu, div.taco-container > ul > li.Tofu{
-  background-color: #FFFAF2;
-  color: #73705C;
+  border: 0.0625rem #FFFAF2 solid;
+  color: #FFFAF2;
 }
 .ingredients > ul > li > button.Tofu, div.taco-container > ul > li.Tofu:before, div.taco-container ul li.Tofu::after {
   background-image: url(/icons/tofu.svg);
 }
 /* black beans */
 .ingredients > ul > li > button.Black.Beans, div.taco-container > ul > li.Black.Beans{
-  background-color: #bbb;
-  color: #000;
+  /* background-color: #250900; */
+  border: 0.0625rem #9e928f solid;
+  color: #9e928f;
 }
 .ingredients > ul > li > button.Black.Beans, div.taco-container > ul > li.Black.Beans:before, div.taco-container ul li.Black.Beans::after{
   background-image: url(/icons/beans-b.svg);
 }
 /* pinto beans */
 .ingredients > ul > li > button.Pinto.Beans, div.taco-container > ul > li.Pinto.Beans{
-  background-color: #FBDBD6;
-  color: #5C2806;
+  /* background-color: #5c2806; */
+  border: 0.0625rem #FBDBD6 solid;
+  color: #FBDBD6;
 }
 .ingredients > ul > li > button.Pinto.Beans, div.taco-container > ul > li.Pinto.Beans:before, div.taco-container ul li.Pinto.Beans::after {
   background-image: url(/icons/beans-p.svg);
 }
 /* lettuce */
 .ingredients > ul > li > button.Lettuce, div.taco-container > ul > li.Lettuce{
-  background-color: #D0FFDA;
-  color: #277A4E;
+  border: 0.0625rem #D0FFDA solid;
+  color: #D0FFDA;
 }
 .ingredients > ul > li > button.Lettuce, div.taco-container > ul > li.Lettuce:before, div.taco-container ul li.Lettuce::after {
   background-image: url(/icons/lettuce.svg);
 }
 /* tomato */ 
 .ingredients > ul > li > button.Tomatoes, div.taco-container > ul > li.Tomatoes{
-  background-color: #FED3BD;
-  color: #A32300;
+  border: 0.0625rem #FED3BD solid;
+  color: #FED3BD;
 }
 .ingredients > ul > li > button.Tomatoes, div.taco-container > ul > li.Tomatoes:before, div.taco-container ul li.Tomatoes::after {
   background-image: url(/icons/tomato.svg);
 }
 /* onion */
 .ingredients > ul > li > button.Onions, div.taco-container > ul > li.Onions{
-  background-color: #FFFACC;
-  color: #8A7E01;
+  border: 0.0625rem #FFFACC solid;
+  color: #FFFACC;
 }
 .ingredients > ul > li > button.Onions, div.taco-container > ul > li.Onions:before, div.taco-container ul li.Onions::after {
   background-image: url(/icons/onion.svg);
 }
 /* cheese */ 
 .ingredients > ul > li > button.Cheese, div.taco-container > ul > li.Cheese{
-  background-color: #FFF687;
-  color: #8F6E01;
+  border: 0.0625rem #FFF687 solid;
+  color: #FFF687;
 }
 .ingredients > ul > li > button.Cheese, div.taco-container > ul > li.Cheese:before, div.taco-container ul li.Cheese::after {
   background-image: url(/icons/cheese.svg);
 }
 /* crema*/
 .ingredients > ul > li > button.Crema, div.taco-container > ul > li.Crema{
-  background-color: #Fff;
-  color: #205685;
+  border: 0.0625rem #fff solid;
+  color: #fff;
 }
 .ingredients > ul > li > button.Crema, div.taco-container > ul > li.Crema:before, div.taco-container ul li.Crema::after {
   background-image: url(/icons/drop-w.svg);
 }
 /* guac */
 .ingredients > ul > li > button.Guacamole, div.taco-container > ul > li.Guacamole{
-  background-color: #E6FFB1;
-  color: #597823;
+  border: 0.0625rem #E6FFB1 solid;
+  color: #E6FFB1;
 }
 .ingredients > ul > li > button.Guacamole, div.taco-container > ul > li.Guacamole:before, div.taco-container ul li.Guacamole::after {
   background-image: url(/icons/guac.svg);
 }
 /* red salsa */
 .ingredients > ul > li > button.Red.Salsa, div.taco-container > ul > li.Red.Salsa{
-  background-color: #FFCBBB;
-  color: #782C1D;
+  border: 0.0625rem #FFCBBB solid;
+  color: #FFCBBB;
 }
 .ingredients > ul > li > button.Red.Salsa, div.taco-container > ul > li.Red.Salsa:before, div.taco-container ul li.Red.Salsa::after {
   background-image: url(/icons/drop-r.svg);
 }
 /* green salsa*/
 .ingredients > ul > li > button.Green.Salsa, div.taco-container > ul > li.Green.Salsa{
-  background-color: #CAFAAE;
-  color: #316911;
+  border: 0.0625rem #CAFAAE solid;
+  color: #CAFAAE;
 }
 .ingredients > ul > li > button.Green.Salsa, div.taco-container > ul > li.Green.Salsa:before, div.taco-container ul li.Green.Salsa::after {
   background-image: url(/icons/drop-g.svg);
 }
 /* white rice */
 .ingredients > ul > li > button.White, div.taco-container > ul > li.White{
-  background-color: #Fff;
-  color: #205685;
+  border: 0.0625rem #fff solid;
+  color: #fff;
 }
 .ingredients > ul > li > button.White, div.taco-container > ul > li.White:before, div.taco-container ul li.White::after {
   background-image: url(/icons/white-rice.svg);
 }
 /* brown rice */
 .ingredients > ul > li > button.Brown, div.taco-container > ul > li.Brown{
-  background-color: #d5ae8a;
-  color: #5C2806;
+  border: 0.0625rem #d5ae8a solid;
+  color: #d5ae8a;
 }
 .ingredients > ul > li > button.Brown, div.taco-container > ul > li.Brown:before, div.taco-container ul li.Brown::after {
   background-image: url(/icons/brown-rice.svg);
 }
 /* cilantro */
 .ingredients > ul > li > button.Cilantro, div.taco-container > ul > li.Cilantro{
-  background-color: #CAFAAE;
-  color: #316911;
+  border: 0.0625rem #CAFAAE solid;
+  color: #CAFAAE;
 }
 .ingredients > ul > li > button.Cilantro, div.taco-container > ul > li.Cilantro:before, div.taco-container ul li.Cilantro::after {
   background-image: url(/icons/cilantro.svg);
 }
 /* quinoa */
 .ingredients > ul > li > button.Quinoa, div.taco-container > ul > li.Quinoa{
-  background-color: #FFFAF2;
-  color: #73705C;
+  border: 0.0625rem #FFFAF2 solid;
+  color: #FFFAF2;
 }
 .ingredients > ul > li > button.Quinoa, div.taco-container > ul > li.Quinoa:before, div.taco-container ul li.Quinoa::after {
   background-image: url(/icons/quinoa.svg);
