@@ -6,11 +6,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925 */
+/* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925, #fc7f2a */
 html,
 body {
-  background: #f67925;
-  background-image: linear-gradient(#a6380c, #f67925);
+  background: #fc8d25;
+  background-image: linear-gradient(#b04013, #fc8d25);
   background-repeat: no-repeat;
   color: #ffef4f;
   font-family: questa-sans, sans-serif;
@@ -399,14 +399,14 @@ li.new-taco > p {
 }
 /* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925 */
 div.taco-container ul {
-  background: #b04013;
-  border-top-left-radius: 1.0rem;
-  border-top-right-radius: 1.0rem;
-  margin: 0 0 0 7.0rem;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 0 0.125rem 7.0rem;
 }
 div.taco-container ul li {
-  background: transparent;
+  background: rgba(200,60,0,1.0);
   border-bottom: 0 !important;
+  /* border-bottom: 0.03125rem #a6380c solid !important; */
   font-size: 1.0625rem;
   height: 1.6875rem;
   line-height: 1.0rem;
@@ -415,8 +415,8 @@ div.taco-container ul li {
   text-align: left;
   width:  10.625rem;
 }
-div.taco-container ul li:nth-child(even) {
-  background: rgba(80,40,0,0.5)
+div.taco-container ul li:nth-child(odd) {
+  background: rgba(220,80,0,1.0)
 }
 div.taco-container ul li::after {
   background-position: top right; 
@@ -428,19 +428,18 @@ div.taco-container ul li::after {
   margin: 0 0 -0.25rem 0;
   width: 1.5rem;
 }
-div.taco-container ul li:first-child {
-  border-top-left-radius: 1.0rem;
-  border-top-right-radius: 1.0rem;
+div.taco-container ul li {
+  border-radius: 1.0rem;
 }
-div.taco-container ul li:last-child {
+div.taco-container ul li:first-child {
   height: 2.0rem;
 }
-/* div.taco-container ul li:nth-child(1) {padding: 0.25rem 0 0 1.0rem;}
-div.taco-container ul li:nth-child(2) {padding: 0.25rem 0 0 1.0rem;}
-div.taco-container ul li:nth-child(3) {padding: 0.25rem 0 0 1.25rem;}
-div.taco-container ul li:nth-child(4) {padding: 0.25rem 0 0 1.5rem;}
-div.taco-container ul li:nth-child(5) {padding: 0.25rem 0 0 1.875rem;}
-div.taco-container ul li:nth-child(6) {padding: 0.25rem 0 0 2.5rem;} */
+div.taco-container ul li:nth-child(10) {margin-left: 0.125rem; padding: 0.25rem 0 0 0;text-align: center; width: 8.75rem;}
+div.taco-container ul li:nth-child(9) {margin-left: 0;padding: 0.25rem 0 0 0;text-align: center; width: 9.0rem;}
+div.taco-container ul li:nth-child(8) {margin-left: -0.25rem;padding: 0.25rem 0 0 0;text-align: center; width: 9.5rem;}
+div.taco-container ul li:nth-child(7) {margin-left: -0.5rem; padding: 0.25rem 0 0 2.0rem;width: 10.25rem;}
+div.taco-container ul li:nth-child(6) {padding: 0.25rem 0 0 2.125rem;width: 10.125rem;}
+div.taco-container ul li:nth-child(5) {padding: 0.25rem 0 0 2.5rem;width: 10.5rem;}
 
 div.taco-container p.taco-name {
   bottom: -1.4125rem;

@@ -5,19 +5,19 @@ const defaultTacos = [
         "id": "r19su60",
         "createdAt": 1710248735002,
         "taconame": "The Western",
-        "postOptions": "Cheese,Crema,Red Salsa,Pinto Beans,Brown Rice,Beef,Onions,Beef,Onions,Beef"
+        "postOptions": "Beef,Onions,Beef,Onions,Beef,Brown Rice,Pinto Beans,Red Salsa,Crema,Cheese"
     },
     {
         "id": "736mhvy",
         "createdAt": 1710248821930,
         "taconame": "The Tapatio",
-        "postOptions": "Crema,Guacamole,Green Salsa,Tomatoes,Lettuce,Cilantro,Onions,al Pastor,al Pastor,al Pastor"
+        "postOptions": "al Pastor,al Pastor,al Pastor,Onions,Cilantro,Lettuce,Tomatoes,Green Salsa,Guacamole,Crema"
     },
     {
         "id": "8rov8es",
         "createdAt": 1710248837341,
         "taconame": "The Pacifico",
-        "postOptions": "Crema,Green Salsa,Tomatoes,Lettuce,Cilantro,Onions,Shrimp,Shrimp,Shrimp,Shrimp"
+        "postOptions": "Shrimp,Shrimp,Shrimp,Shrimp,Lettuce,Onions,Cilantro,Tomatoes,Crema,Green Salsa"
     }
   ]
 
