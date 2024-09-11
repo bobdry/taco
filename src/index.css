@@ -78,6 +78,10 @@ div.header {
   overflow: hidden;
   padding: 0 0 0.25rem 0;
 }
+div.header a:last-of-type { 
+  cursor: default;
+  opacity: 0.5;
+}
 div.header.home {
   padding: 0;
 }
@@ -141,7 +145,7 @@ div.header a:last-of-type svg {
   margin: 0.9125rem 0.415rem 0 0;
   width: 2.0rem;
 }
-div.header a:hover {
+div.header a:first-of-type:hover {
   background: #fffac3;
 }
 div.header svg {
@@ -179,10 +183,13 @@ div.header svg {
   }
 }
 /* body */
+div#stacks {
+  padding: 0.5rem 0;
+}
 div#stacks h3 {
   font-size: 1.9125rem;
   line-height: 1.5rem;
-  margin: 2.0rem 0 1.25rem 0;
+  margin: 2.0rem 0 1.5rem 0;
   text-shadow: 1px 1px 1px #000000;
 }
 ul.taco-row {
@@ -397,26 +404,26 @@ li.new-taco > p {
   width: 100%;
   z-index: 2;
 }
-/* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925 */
+/* #a6380c, #b04013, #ce5d11, #e86e1b, #f67925, #fc7f2a */
 div.taco-container ul {
   display: flex;
   flex-direction: column-reverse;
   margin: 0 0 0.125rem 7.0rem;
 }
 div.taco-container ul li {
-  background: rgba(200,60,0,1.0);
+  background: rgba(220,80,0,1.0);
   border-bottom: 0 !important;
-  /* border-bottom: 0.03125rem #a6380c solid !important; */
-  font-size: 1.0625rem;
-  height: 1.6875rem;
+  font-size: 1.125rem;
+  height: 2.1875rem;
   line-height: 1.0rem;
   margin: 0;
-  padding: 0.3125rem 0 0 2.875rem;
+  padding: 0.5rem 0 0 2.875rem;
   text-align: left;
-  width:  10.625rem;
+  text-shadow: 1px 1px 2px #a6380c;
+  width: 10.625rem;
 }
 div.taco-container ul li:nth-child(odd) {
-  background: rgba(220,80,0,1.0)
+  background: rgba(200, 60, 0, 1.0);
 }
 div.taco-container ul li::after {
   background-position: top right; 
@@ -429,17 +436,17 @@ div.taco-container ul li::after {
   width: 1.5rem;
 }
 div.taco-container ul li {
-  border-radius: 1.0rem;
+  border-radius: 1.25rem;
 }
 div.taco-container ul li:first-child {
-  height: 2.0rem;
+  height: 2.25rem;
 }
-div.taco-container ul li:nth-child(10) {margin-left: 0.125rem; padding: 0.25rem 0 0 0;text-align: center; width: 8.75rem;}
-div.taco-container ul li:nth-child(9) {margin-left: 0;padding: 0.25rem 0 0 0;text-align: center; width: 9.0rem;}
-div.taco-container ul li:nth-child(8) {margin-left: -0.25rem;padding: 0.25rem 0 0 0;text-align: center; width: 9.5rem;}
-div.taco-container ul li:nth-child(7) {margin-left: -0.5rem; padding: 0.25rem 0 0 2.0rem;width: 10.25rem;}
-div.taco-container ul li:nth-child(6) {padding: 0.25rem 0 0 2.125rem;width: 10.125rem;}
-div.taco-container ul li:nth-child(5) {padding: 0.25rem 0 0 2.5rem;width: 10.5rem;}
+div.taco-container ul li:nth-child(8) {margin-left: -1.5rem; padding: 0.5rem 0 0 0;text-align: center; width: 8.75rem;}
+div.taco-container ul li:nth-child(7) {margin-left: -2.25rem; padding: 0.5rem 0 0 0;text-align: center; width: 10.25rem;}
+div.taco-container ul li:nth-child(6) {margin-left: -2.75rem; padding: 0.5rem 0 0 3.375rem;width: 11.25rem;}
+div.taco-container ul li:nth-child(5) {margin-left: -1.125rem; padding: 0.5rem 0 0 2.75rem;width: 10.5rem;}
+div.taco-container ul li:nth-child(4) {margin-left: -0.25rem; padding: 0.5rem 0 0 2.5rem;width: 10.5rem;}
+div.taco-container ul li:nth-child(3) {padding: 0.5rem 0 0 2.625rem;}
 
 div.taco-container p.taco-name {
   bottom: -1.4125rem;
