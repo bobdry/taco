@@ -26,13 +26,20 @@ const addOption = (e) => {
     let l = options.length; 
     if (l < 8) { 
       const optionsStack = [...options];
-      optionsStack.unshift('' + e.target.className +'');
+      optionsStack.push('' + e.target.className + '');
       setOptions(optionsStack);  
-    } 
+    }  
     else { 
         alert('Your Taco is FULL!'); 
     } 
 } 
+
+const handleRemoveOption = (e) => {
+  const listItem = e.target.parentElement;
+  const listItemIndex = [...listItem.parentElement.children].indexOf(listItem);
+  const filterOptions = options.filter((_, index) => index !== listItemIndex);
+  setOptions([...filterOptions]); 
+}
 
 const resetOptions = () => {setOptions([])}
 
@@ -40,7 +47,7 @@ const resetOptions = () => {setOptions([])}
     <>
       <ul className="taco-row edit-row">
         <li>
-          <TacoContainer name={taco.taconame} selection={options}/>
+          <TacoContainer name={taco.taconame} selection={options} handleClick={handleRemoveOption} editable={true} />
         </li>
       </ul>
       <div className="edit-form">
