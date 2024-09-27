@@ -141,7 +141,7 @@ div.header a:last-of-type svg {
   margin: 0.9125rem 0.415rem 0 0;
   width: 2.0rem;
 }
-div.header a:first-of-type:hover {
+div.header a:hover {
   background: #fffac3;
 }
 div.header svg {
@@ -447,7 +447,7 @@ div.taco-container ul li::after {
 div.taco-container ul li:first-child {
   height: 2.25rem;
 }
-div.taco-container ul li:nth-child(8) {margin-left: -1.5rem; padding: 0.5625rem 0 0 0;text-align: center; width: 8.5rem;}
+div.taco-container ul li:nth-child(8) {margin-left: -1.375rem; padding: 0.5625rem 0 0 0;text-align: center; width: 8.5rem;}
 div.taco-container ul li:nth-child(7) {margin-left: -2.125rem; padding: 0.5625rem 0 0 0;text-align: center; width: 10.0rem;}
 div.taco-container ul li:nth-child(6) {margin-left: -2.875rem; padding: 0.5625rem 0 0 3.25rem;width: 11.5rem;}
 div.taco-container ul li:nth-child(5) {margin-left: -1.125rem; padding: 0.5625rem 0 0 2.6875rem;width: 10.25rem;}
