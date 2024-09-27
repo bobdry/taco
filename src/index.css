@@ -409,7 +409,7 @@ div.taco-container ul {
 div.taco-container ul li {
   background: rgba(220,80,0,1.0);
   border: 0 !important;
-  border-radius: 1.0rem;
+  border-radius: 0.625rem;
   font-size: 1.125rem;
   height: 2.1875rem;
   line-height: 1.0rem;
@@ -418,7 +418,7 @@ div.taco-container ul li {
   position: relative;
   text-align: left;
   text-shadow: 1px 1px 2px #a6380c;
-  width: 10.625rem;
+  width: 10.5rem;
 }
 div.taco-container ul li > button {
   border-radius: 1.0rem;
@@ -447,12 +447,12 @@ div.taco-container ul li::after {
 div.taco-container ul li:first-child {
   height: 2.25rem;
 }
-div.taco-container ul li:nth-child(8) {margin-left: -1.5rem; padding: 0.5625rem 0 0 0;text-align: center; width: 8.75rem;}
-div.taco-container ul li:nth-child(7) {margin-left: -2.25rem; padding: 0.5625rem 0 0 0;text-align: center; width: 10.25rem;}
-div.taco-container ul li:nth-child(6) {margin-left: -2.75rem; padding: 0.5625rem 0 0 3.375rem;width: 11.25rem;}
-div.taco-container ul li:nth-child(5) {margin-left: -1.125rem; padding: 0.5625rem 0 0 2.75rem;width: 10.5rem;}
-div.taco-container ul li:nth-child(4) {margin-left: -0.25rem; padding: 0.5625rem 0 0 2.5rem;width: 10.5rem;}
-div.taco-container ul li:nth-child(3) {padding: 0.5rem 0 0 2.625rem;}
+div.taco-container ul li:nth-child(8) {margin-left: -1.5rem; padding: 0.5625rem 0 0 0;text-align: center; width: 8.5rem;}
+div.taco-container ul li:nth-child(7) {margin-left: -2.125rem; padding: 0.5625rem 0 0 0;text-align: center; width: 10.0rem;}
+div.taco-container ul li:nth-child(6) {margin-left: -2.875rem; padding: 0.5625rem 0 0 3.25rem;width: 11.5rem;}
+div.taco-container ul li:nth-child(5) {margin-left: -1.125rem; padding: 0.5625rem 0 0 2.6875rem;width: 10.25rem;}
+div.taco-container ul li:nth-child(4) {margin-left: -0.25rem; padding: 0.5625rem 0 0 2.5rem;width: 10.125rem;}
+div.taco-container ul li:nth-child(3) {padding: 0.5rem 0 0 2.625rem;width: 10.25rem;}
 
 div.taco-container p.taco-name {
   bottom: -1.4125rem;
