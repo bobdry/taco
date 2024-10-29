@@ -19,6 +19,8 @@ import Index, {
   loader as rootLoader,
   action as rootAction,
 }  from "./routes/index";
+import SignInPage from "./routes/sign-in";
+import SignUpPage from "./routes/sign-up";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
           {
             path: "tacos/:tacoId/destroy",
             action: destroyAction,
+          },
+          {
+            path: "/sign-in/*",
+            element: <SignInPage />,
+          },
+          {
+            path: "/sign-up/*",
+            element: <SignUpPage />,
           },
         ],
       },
