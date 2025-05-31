@@ -2,9 +2,12 @@ import {
   useLoaderData,
   Form,
   useNavigate,
+  useSubmit,
 } from "react-router-dom";
 import { getTaco, updateTaco } from "../tacos";
 import TacoContainer from "./../components/tacoContainer";
+import ConfirmationModal from "./../components/confirmationModal"
+import { useState } from 'react';
 
 export async function action({ params }) {
   return updateTaco(params.tacoId);
@@ -25,6 +28,24 @@ export default function Taco() {
   const { taco } = useLoaderData();
   const navigate = useNavigate();
   const optionsArr = taco.postOptions.length ? taco.postOptions.split(',') : [];
+  const [isModalOpen, setModalOpen] = useState(false);
+  const submit = useSubmit();
+
+  const handleConfirmDelete = () => {
+    setModalOpen(false);
+    const formData = new FormData();
+    formData.append('tacoId', taco.Id);
+
+    submit(formData, {
+      method: 'post',
+      action: `destroy`,
+    });
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <div id="taco">
       <ul className="taco-row">
@@ -51,13 +72,8 @@ export default function Taco() {
             method="post"
             action="destroy"
             onSubmit={(event) => {
-              if (
-                !confirm(
-                  "Please confirm you want to delete this record."
-                )
-              ) {
-                event.preventDefault();
-              }
+              setModalOpen(true);
+              event.preventDefault();
             }}
           >
             <button 
@@ -69,6 +85,11 @@ export default function Taco() {
           </Form>
         </div>
       </div>
+      <ConfirmationModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal} 
+        onConfirm={handleConfirmDelete} 
+      />
     </div>
   );
 }

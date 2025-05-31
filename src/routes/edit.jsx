@@ -8,6 +8,8 @@ import {
 import { updateTaco } from "../tacos";
 import TacoContainer from "./../components/tacoContainer";
 import TacoOptions from "./../components/tacoOptions";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export async function action({ request, params }) {
     const formData = await request.formData();
@@ -30,7 +32,15 @@ const addOption = (e) => {
       setOptions(optionsStack);  
     }  
     else { 
-        alert('Your Taco is FULL!'); 
+        toast.info('Your Taco is FULL!', {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          progress: false,
+          theme: "dark",
+        });
     } 
 } 
 
@@ -80,6 +90,7 @@ const resetOptions = () => {setOptions([])}
           </div>
         </Form>
       </div>
+      <ToastContainer />
     </>
   );
 }
