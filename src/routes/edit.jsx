@@ -32,9 +32,9 @@ const addOption = (e) => {
       setOptions(optionsStack);  
     }  
     else { 
-        toast.info('Your Taco is FULL!', {
+        toast('Your Taco is FULL!', {
           position: "top-center",
-          autoClose: 3000,
+          autoClose: 30000,
           hideProgressBar: true,
           closeOnClick: true,
           pauseOnHover: true,
