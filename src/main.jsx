@@ -20,7 +20,6 @@ import Index, {
   action as rootAction,
 }  from "./routes/index";
 import SignInPage from "./routes/sign-in";
-import SignUpPage from "./routes/sign-up";
 
 const router = createBrowserRouter([
   {
@@ -56,10 +55,6 @@ const router = createBrowserRouter([
           {
             path: "/sign-in/*",
             element: <SignInPage />,
-          },
-          {
-            path: "/sign-up/*",
-            element: <SignUpPage />,
           },
         ],
       },
